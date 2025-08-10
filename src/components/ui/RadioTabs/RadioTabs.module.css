@@ -1,0 +1,16 @@
+.container {margin-top: 13px;border-radius: 8px;font-size: 0;display: table;width: 100%;}
+.container li {width:33.33%;font-size:14px;text-align: center;color:#666;letter-spacing:var(--letter-spacing);border:1px solid #ddd;display: table-cell;vertical-align: middle;position:relative;}
+.container li:first-child {border-right:none; border-radius: 8px 0 0 8px;}
+.container li:last-child {border-left:none; border-radius: 0 8px 8px 0;}
+.container li.disabled label {cursor:default; color:#ccc;}
+.container li.disabled span {color:#ccc;}
+.container input { position: absolute; left: -9999px;}
+.container label {padding: 12px 0 12px;display:block;cursor: pointer;}
+.container p {line-height:18px;}
+.container span {font-size:12px; color:#aaaaaa; position:relative;display: inline-block; margin-top:5px;}
+
+/* Active 상태 */
+.container input[type=radio]:checked ~ * {color: var(--color-primary);}
+.container input[type=radio]:checked ~ p:before {width: calc(100% - 2px);height: calc(100% - 2px);border:2px solid var(--color-primary);content:'';display:block;position:absolute;left: -1px;top: -1px;z-index: 10;background: transparent;}
+.container li:first-child input[type=radio]:checked ~ p:before {border-radius: 8px 0 0 8px;}
+.container li:last-child input[type=radio]:checked ~ p:before {border-radius: 0 8px 8px 0;}

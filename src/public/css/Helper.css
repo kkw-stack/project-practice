@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/*
+ * File       : DesignSystem.css
+ * Author     : STUDIO-JT (NICO)
+ * Guideline  : JTstyleReact.1.0
+ *
+ * SUMMARY:
+ * 1) 
+ */
+
+
+/* **************************************** *
+ * A11Y 
+ * **************************************** */
+.sr_only { position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);}
+
+
+
+/* **************************************** *
+ * HEADLINES
+ * **************************************** */
+.h1, .h2, .h3, .h4, .h5, .h6{font-weight: bold; color: var(--color-title) }
+.h1, .h2, .h3, .h4, .h5, .h6, .t1, .t2, .t3, .t4, .t5, .t6{letter-spacing: var(--letter-spacing)}
+
+.h1{font-size: var(--font-size-h1); line-height: var(--font-lh-h1); color: var(--color-title);}
+.h2{font-size: var(--font-size-h2); line-height: var(--font-lh-h2);}
+.h3{font-size: var(--font-size-h3); line-height: var(--font-lh-h3);}
+.h4{font-size: var(--font-size-h4); line-height: var(--font-lh-h4);}
+.h5{font-size: var(--font-size-h5); line-height: var(--font-lh-h5); font-weight: normal; }
+.h6{font-size: var(--font-size-h6); line-height: var(--font-lh-h6);}
+
+
+
+/* **************************************** *
+ * TEXT
+ * **************************************** */
+.t1{font-size: var(--font-size-t1); line-height: var(--font-lh-t1);}
+.t2{font-size: var(--font-size-t2); line-height: var(--font-lh-t2);}
+.t3{font-size: var(--font-size-t3); line-height: var(--font-lh-t3);}
+.t4{font-size: var(--font-size-t4); line-height: var(--font-lh-t4);}
+.t5{font-size: var(--font-size-t5); line-height: var(--font-lh-t5);}
+.t6{font-size: var(--font-size-t6); line-height: var(--font-lh-t6);}
+
+.u1{text-decoration-line: underline; font-size: var(--font-size-u1); line-height: var(--font-lh-u1);}
+
+
+.header_sticky_title{text-align: center; line-height: 62px; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; width: calc(100% - 110px); margin: 0 auto; overflow: hidden;}
+
+
+
+
+/* **************************************** *
+ * MEDIAQUERIES
+ * **************************************** */
+ @media (min-width: 1023px){
+    .header_sticky_title{ line-height: 80px;}
+
+ }

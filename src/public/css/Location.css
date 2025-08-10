@@ -1,0 +1,4 @@
+.location_open { position: fixed; width :100%; overflow: hidden; }
+html:has(.location_open) { overflow-y: scroll; } /* Prevent pull to refresh on ios if location open */
+
+html.desktop .location_open [class*=Nav_nav] { display: none; }

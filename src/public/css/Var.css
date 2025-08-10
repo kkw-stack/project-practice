@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/*
+ * File       : Var.css
+ * Author     : STUDIO-JT (NICO)
+ * Guideline  : JTstyleReact.1.0
+ *
+ * SUMMARY:
+ * 1) COLOR
+ * 2) TYPOGRAPHY
+ */
+
+:root {
+
+    /* COLOR */
+    --color-primary: #2AC1BC;
+    --color-title: #222222;
+    --color-text-body: #666666;
+    --color-text-sub: #999999;
+    --color-text-desc: #aaaaaa;
+    --color-text-input: #bbbbbb;
+    --color-text-info: #cccccc;
+    --color-text-outline: #dddddd;
+    --color-divider: #dddddd;
+    --color-bg: #f8f8f8;
+    --color-bg-section: #eeeeee;
+    --color-error: #EE3838;
+    --color-map-marker: #FF6243;
+    --color-map-rating: #FFC200;
+    --color-title-secondary: #FFFC00;
+    --color-favorite: #FFA9A9;
+    --color-message: #1A7CFF;
+    --color-message: #FFFDEE;
+    --color-kakao-y:#FAE100;
+    --color-kakao-dark:#3B1C1C;
+ 
+    /* LETTER SPACING */
+    --letter-spacing: -0.025em;
+
+    /* FONT FAMILY */ 
+    --font-primary: 'NotoSansKR',sans-serif;
+    
+    /* FONT SIZE */ 
+    --font-size-h1:24px;
+    --font-size-h2:20px;
+    --font-size-h3:18px;
+    --font-size-h4:16px;
+    --font-size-h5:16px;
+    --font-size-h6:15px;
+
+    --font-size-t1:15px;
+    --font-size-t2:14px;
+    --font-size-t3:13px;
+    --font-size-t4:12px;
+    --font-size-t5:11px;
+    --font-size-t6:10px;
+
+    --font-size-u1:15px;
+
+    /* LINE HEIGHT */ 
+    --font-lh-h1:30px;
+    --font-lh-h2:28px;
+    --font-lh-h3:26px;
+    --font-lh-h4:24px;
+    --font-lh-h5:24px;
+    --font-lh-h6:25px;
+
+    --font-lh-t1:25px;
+    --font-lh-t2:22px;
+    --font-lh-t3:19px;
+    --font-lh-t4:18px;
+    --font-lh-t5:14px;
+    --font-lh-t6:13px;
+    
+    --font-lh-u1:18px;
+}

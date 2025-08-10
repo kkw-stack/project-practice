@@ -1,0 +1,48 @@
+.container{padding:16px; background:#f8f8f8;}
+.inner {padding: 10px 8px 23px;background:#fff;border:1px solid #ddd;border-radius:8px;}
+.primary_category {font-size:0;margin: 0;}
+.primary_category li {margin: 13px 0;display:inline-block;vertical-align:top;width:25%;text-align:center;}
+.primary_category li a { display: block; }
+.primary_category li span {display:block;line-height: 1.2;font-size:13px; color:#222;letter-spacing:-0.05em; font-weight: 700; }
+.primary_category li .category_icon_img { width: 100%;height:62px;display: table; text-align: center;}
+.primary_category li .category_icon_img p { display: table-cell; vertical-align: middle;}
+.primary_category li .category_icon_img img {max-width: inherit; height: 61px; margin-left: -2px; margin-bottom: 6px;}
+
+.primary_category li .icon {height: 62px;background-repeat:no-repeat;background-position: center center;background-size: auto 41px; position:relative;}
+.primary_category li[data-main-cat="category_one_person"] .icon { background-image:url(./images/category-one-person.svg); background-size: 29px 45px;}
+.primary_category li[data-main-cat="category_thailand"] .icon { background-image:url(./images/category-thailand.svg);background-size: 39px 39px;}
+.primary_category li[data-main-cat="category_china"] .icon { background-image:url(./images/category-china.svg);background-size: 40px 39px;}
+.primary_category li[data-main-cat="category_korea"] .icon { background-image:url(./images/category-korea.svg);background-size: 38px 45px;}
+.primary_category li[data-main-cat="category_swedish"] .icon { background-image:url(./images/category-swedish.svg);background-size: 34px 45px;}
+.primary_category li[data-main-cat="category_aroma"] .icon { background-image:url(./images/category-aroma.svg);background-size: 37px 45px;}
+.primary_category li[data-main-cat="category_sport"] .icon { background-image:url(./images/category-sport.svg);background-size: 41px 41px;}
+.primary_category li[data-main-cat="category_deep_tissue"] .icon { background-image:url(./images/category-deep-tissue.svg);background-size: 45px 41px;}
+.primary_category li[data-main-cat="category_sleep"] .icon { background-image:url(./images/category-sleep.svg);background-size: 53px 41px;}
+.primary_category li[data-main-cat="category_24hours"] .icon { background-image:url(./images/category-24hours.svg);background-size: 48px 41px;}
+.primary_category li[data-main-cat="category_group"] .icon { background-image:url(./images/category-group.svg);background-size: 38px 41px;}
+.primary_category li[data-main-cat="category_spa"] .icon { background-image:url(./images/category-spa.svg);background-size: 40px 41px;}
+.primary_category li[data-main-cat="category_waxing"] .icon { background-image:url(./images/category-waxing.svg);background-size: 49px 39px;}
+.primary_category li[data-main-cat="category_homecare"] .icon { background-image:url(./images/category-homecare.svg);background-size: 42px 41px;}
+.primary_category li[data-main-cat="category_correction"] .icon { background-image:url(./images/category-correction.svg);background-size: 38px 39px;}
+.primary_category li[data-main-cat="category_franchise"] .icon { background-image:url(./images/category-franchise.svg);background-size: 45px 41px;}
+.primary_category li[data-main-cat="category_skin_care"] .icon { background-image:url(./images/category-skin-care.svg);background-size: 36px 45px;}
+.primary_category li[data-main-cat="category_women_only"] .icon { background-image:url(./images/category-women-only.svg);background-size: 35px 45px;}
+.primary_category li[data-main-cat="category_empty"]:before {width:8px;height:8px;margin: 37px auto 0;background: url(./images/category-empty.svg) no-repeat; background-size:100% 100%;text-align: center;content:'';display:block;}
+
+.secondary_category  {font-size:0; margin-top:19px;}
+.secondary_category li {margin: 3px;font-size:13px;line-height:17px;letter-spacing:var(--letter-spacing);text-align:center;display:inline-block;vertical-align:middle;}
+.secondary_category li a { display:block; border:1px solid #ddd;border-radius:30px;  }
+.secondary_category li span {display:block; padding: 5px 13px 6px; color:#666; }
+:global(.ios) .secondary_category li span { padding: 7px 13px 5px; } 
+
+.empty:before { width: 8px; height: 8px; margin: 28px auto 0; background: url(./images/category-empty.svg) no-repeat; background-size: 100% 100%; text-align: center; content: ''; display: block;}
+
+@media (min-width: 374px){
+    .primary_category li span {font-size:14px;}
+    .primary_category li .category_icon_img img {margin-left: -2px;}
+}
+
+@media (min-width: 1023px){
+    .container{padding: 24px;}
+    :global(.ios) .secondary_category li span { padding: 5px 13px 6px; } 
+}

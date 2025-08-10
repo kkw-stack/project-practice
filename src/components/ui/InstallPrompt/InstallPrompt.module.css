@@ -1,0 +1,42 @@
+/* Install banner */
+.open_body{position: fixed; width: 100%;}
+.container {background: #fff; z-index: 9999;  position: fixed;left: 0; bottom: 0;  width: 100%; transform: translate3d(0px, 100%, 0px); animation: slide 600ms; animation-delay: 200ms; animation-fill-mode: forwards; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);  }
+.inner {margin: 20px 24px; padding-top: 20px;position: relative;}
+.logo { width: 71px; height: 29px; margin-bottom: 17px;}
+.overlay {opacity:0; position:fixed; z-index: 9998; position: fixed; top:0; bottom:0 ; left: 0; right: 0; background-color: rgba(0,0,0,0.7);animation: fade 300ms; animation-delay: 100ms; animation-fill-mode: forwards; animation-timing-function: ease-out;}
+.close { position: absolute; right: -9px; top: -10px; z-index: 2;}
+.content  > button{ position: relative;}
+.desc:before { display: block; content: ""; background: transparent url(images/character.svg) no-repeat center center; width: 142px; height: 158px; position: absolute; top: 4px; right: 30px; }
+.text { margin-bottom: 34px;line-height: 24px; letter-spacing: -0.025em; font-size: 16px; color: #222; position:relative}
+.text b { font-weight: 700; }
+.ios_notice { display: none;}
+
+/* ios version */
+:global(.ios) .container { overflow: hidden; animation-name: fade; bottom: auto; top: 50%; left: 50%; transform: translate3d(-50%, -50%, 0px); max-width: 320px; width: calc(100% - 60px); border-radius: 8px;}
+:global(.ios) .inner { padding-top: 60px; margin-bottom: 0;}
+:global(.ios) .desc:before { top: 40px; right: 0;}
+:global(.ios) .text { margin-bottom: 40px;}
+:global(.ios) .btn { display: none;}
+:global(.ios) .ios_notice { background:#F8F8F8; display: block; padding: 16px 24px; margin: 0 -24px;line-height: 22px; letter-spacing: -0.025em; font-size: 14px; text-align: center;}
+:global(.ios) .ios_notice span { position: relative; padding-left: 20px; display: inline-block;}
+:global(.ios) .ios_notice span b {font-weight: 700;}
+:global(.ios) .ios_notice span:before {position:absolute; top: 50%; left: 0 ; margin-top: -1px; content: ''; width: 14px; height: 18px; background: transparent url(./images/ios-share-icon.svg) no-repeat center center; transform: translateY(-50%);}
+
+/* Animation keyframe */
+@keyframes slide {  
+    to { transform:translate3d(0, 0%, 0) }
+}
+
+@keyframes fade {  
+    to { opacity:1 }
+}
+
+/* Mediaqueries */
+@media (min-width: 680px){
+    .container { bottom: 16px; right: 16px; left: auto; border-radius: 8px; max-width: 360px; box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.15); }
+    .inner {margin: 24px;}
+    .overlay { display: none;}
+
+    :global(.ios) .overlay { display: block;}
+}
+

@@ -1,0 +1,43 @@
+.container {font-size: 0; white-space: nowrap; position: relative; z-index: 499; background: #fff;} 
+.slideshow {overflow: visible;}
+.slideshow > div {overflow: hidden;}
+.slideshow > div > div { font-size: 0;}
+.container:before { width: 100%; height: 1px; background: #ddd; position: absolute; top: 53px; content: ''; display: block;}
+.fixed{ position: fixed; width: 100%; z-index: 490; }
+.has_cursor a{ cursor: url(./images/cursor.png) 25 15, grab;}
+.item {width:auto; display: inline-block;vertical-align: top;font-size: 0;}
+.item a{display: block;height: 54px;padding: 21px 0 18px; position: relative;font-size: 15px;line-height: 1;text-align: center;letter-spacing: var(--letter-spacing);color: #666;}
+.item:first-child a{ padding-left: env(safe-area-inset-left);}
+:global(.galaxy-note-9) .item:first-child a { padding-left: 12px;} 
+
+.item a.active {color: var(--color-primary); font-weight:700;}
+.item a span{display: inline-block; padding: 0 12px;}
+.active:after {content: '';display: block;width: 100%;height: 3px;position: absolute;left:0;bottom: 0;background: var(--color-primary);z-index:100;}
+
+.slideshow_count_1 .item {width: 100%;}
+.slideshow_count_2 .item {width: 50%;}
+
+.nav{display:none; width: 30px; height: 30px; background: #fff; box-shadow: 0px 2px 3px rgb(0, 0, 0, 0.25); border: none; padding: 0; font-size: 0; position: absolute; top: 50%; margin-top: -15px; z-index: 1000; cursor: pointer;}
+.nav[disabled]{opacity:0; visibility:hidden; }
+.nav:before {font-family: 'jt-font'; font-size:17px; font-weight:normal;display:block; position: relative;}
+
+.prev {left:-15px;border-radius: 30px;}
+.prev:before{content:'\e909'; right: 1px;}
+.next {right:-15px;border-radius: 30px; }
+.next:before{content:'\e90a'; left: 1px;}
+
+:global(.mobile) .slideshow::-webkit-scrollbar { display: none; }
+:global(.mobile) .slideshow { overflow: scroll; }
+
+@media (min-width: 680px){
+
+    .fixed{max-width: 500px;}
+
+}
+
+@media (min-width: 1023px){
+
+    .item a.active {font-weight:normal;}
+    :global(.desktop) .nav{ display:block; }
+
+}

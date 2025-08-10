@@ -1,0 +1,95 @@
+.introduce_wrap {padding-top: 50px;}
+
+.introduce_wrap h2{ width:56px; height:23px; margin: auto;}
+
+.introduce_slider {margin-top: 33px; visibility:hidden;}
+.introduce_slider.swiper-container-initialized { visibility: visible; }
+.introduce_slider .swiper-pagination-bullets {margin-top:10px}
+.introduce_slider .slick-arrow {margin-top:-36px;}
+.introduce_slider .swiper-slide {background:#f6f6f6;border-radius: 8px; margin: 0 auto; width: 80%; padding: 27px 10px;text-align: center;}
+.introduce_slider_item p {padding-top: 79px;font-size:15px;color:#666;letter-spacing: var(--letter-spacing);line-height: 1.7;position: relative;}
+.introduce_slider_item p:before {background-position: center top;background-repeat: no-repeat;content:'';display:block;width: 100%;height: 61px;position: absolute;top: 0;}
+
+.introduce_slider_item_01 p:before { background-image:url(./images/company-introduce-01.svg);}
+.introduce_slider_item_02 p:before { background-image:url(./images/company-introduce-02.svg);}
+.introduce_slider_item_03 p:before { background-image:url(./images/company-introduce-03.svg);}
+.introduce_slider_item_04 p:before { background-image:url(./images/company-introduce-04.svg);}
+.introduce_slider_item_05 p:before { background-image:url(./images/company-introduce-05.svg);} 
+
+/*
+.introduce_slider_nav_container{max-width:190px; margin: auto; }
+.introduce_slider_nav {margin-top: 12px;width:100%;text-align:center;height: 26px;}
+.introduce_slider_nav .slick-slide {width: 23px;}
+.introduce_slider_nav .slick-current button {background: var(--color-primary); width:10px;margin: 0;}
+.introduce_slider_nav button {display:inline-block;width:10px;height:10px;padding:0;margin:0 3.5px;background:#ccc;border:none;border-radius:30px;-webkit-transition: all 0.3s ease;transition: all 0.3s ease; -webkit-transform: scale(0) translateX(0); -ms-transform: scale(0) translateX(0); transform: scale(0) translateX(0); opacity:0}
+.introduce_slider_nav .next-active button,
+.introduce_slider_nav .prev-active button,
+.introduce_slider_nav .slick-current button {-webkit-transform: scale(1);-ms-transform: scale(1);transform: scale(1);opacity:1}
+.introduce_slider_nav .last-active-2 button { -webkit-transform: scale(0.6); -ms-transform: scale(0.6); transform: scale(0.6);}
+.introduce_slider_nav .next-active button{-webkit-transform: scale(1) translateX(7px);-ms-transform: scale(1) translateX(7px);transform: scale(1) translateX(7px);}
+.introduce_slider_nav .prev-active button{-webkit-transform:scale(1) translateX(-7px);-ms-transform:scale(1) translateX(-7px);transform:scale(1) translateX(-7px)}
+.introduce_slider_nav .next-active.last-active-0 button {-webkit-transform: translateX(-2px) scale(0.7);-ms-transform: translateX(-2px) scale(0.7);transform: translateX(-2px) scale(0.7);}
+.introduce_slider_nav .prev-active.last-active-0 button {-webkit-transform: translateX(2px) scale(0.7);-ms-transform: translateX(2px) scale(0.7);transform: translateX(2px) scale(0.7);}
+.introduce_slider_nav .next-active.last-active-1 button {-webkit-transform: translateX(-11px) scale(0.5);-ms-transform: translateX(-11px) scale(0.5);transform: translateX(-11px) scale(0.5);}
+.introduce_slider_nav .prev-active.last-active-1 button {-webkit-transform: translateX(11px) scale(0.5);-ms-transform: translateX(11px) scale(0.5);transform: translateX(11px) scale(0.5);}
+.introduce_slider_nav .next-active.last-active-2 button {-webkit-transform: translateX(-22px) scale(0.4);-ms-transform: translateX(-22px) scale(0.4);transform: translateX(-22px) scale(0.4);}
+.introduce_slider_nav .prev-active.last-active-2 button { -webkit-transform:translateX(22px) scale(0.4); -ms-transform:translateX(22px) scale(0.4); transform:translateX(22px) scale(0.4);}
+
+.introduce_slider .slick-dots {text-align:center; margin-top:10px;}
+.introduce_slider .slick-dots > li > button {width:8px; height:8px; padding:0;}
+*/
+.introduce_slider_nav button{ opacity: 0; visibility: hidden; transition: opacity .3s, visibility .3s;}
+.introduce_slider:hover .introduce_slider_nav button{opacity:1;visibility:visible;}
+.introduce_slider .introduce_slider_nav button.swiper-button-disabled{opacity:0;visibility:visible; cursor: default;}
+
+.moongchigo_introduce {padding: 40px 0 35px;text-align:center;position: relative; z-index: 0;}
+.moongchigo_introduce h3 {font-size:24px; font-weight: 700; line-height:1.25; color:#222; letter-spacing:var(--letter-spacing);}
+.moongchigo_introduce p {margin-top: 11px;margin-bottom: 25px;font-size:15px;line-height: 1.7;color:#666;letter-spacing:var(--letter-spacing);}
+.moongchigo_introduce .phone_case {width:216px;height:426px;margin: 0 auto;background:url(./images/mobile-wrap.svg) no-repeat;position: relative;border-radius: 27px; border-top:0.5px solid #eaeaea;}
+.moongchigo_main .phone_case_wrap {position:relative;}
+.moongchigo_main .phone_case .phone_screen_img {background: url(./images/moongchigo-main-01.jpg) no-repeat center center;width: 100%;height: 100%;position: relative;z-index: -1; overflow: hidden;  border-radius: 30px;}
+.moongchigo_main .phone_case .phone_screen_box {width: 260px;height: 167px;border:1px solid #222;position: absolute;top: 170px;left: -22px;-webkit-transform: scale(0.7);-ms-transform: scale(0.7);transform: scale(0.7);background: url(./images/moongchigo-main-02.jpg) no-repeat center center;-webkit-transition: transform .5s;-webkit-transition: -webkit-transform .5s;transition: -webkit-transform .5s;transition: transform .5s;transition: transform .5s, -webkit-transform .5s; }
+.moongchigo_main.in_view .phone_case .phone_screen_box  {-webkit-transform: scale(1);-ms-transform: scale(1);transform: scale(1);}
+
+.moongchigo_shop_list {height:382px; overflow:hidden; background: #f8f8f8; padding-top:31px;}
+.moongchigo_shop_list .phone_case {overflow: hidden;}
+.moongchigo_shop_list .phone_case .phone_screen_img {background: url(./images/moongchigo-shop-list-01.jpg) no-repeat center;width: 100%;height: 945px;position: absolute;top: 6px;z-index: -1;-webkit-transition: top .5s;transition: top .5s;}
+.moongchigo_shop_list.in_view .phone_case .phone_screen_img { -webkit-animation: 3s ease 0s 1 forwards scroll; animation: 3s ease 0s 1 forwards  scroll; }
+.moongchigo_shop_view {padding-top:31px;}
+.moongchigo_shop_view .phone_case .phone_screen_img {position:relative;height: 424px;width: 100%;border-radius: 35px;overflow: hidden; z-index:-1;}
+.moongchigo_shop_view .phone_case .phone_screen_img:before {background: url(./images/moongchigo-shop-view-01.jpg) no-repeat;width: 100%;height: 592px;position: absolute;top: 7px;left: 7px; content:'';display:block;-webkit-transition:transform 1s .3s;-webkit-transition: -webkit-transform 1s .3s;transition: -webkit-transform 1s .3s;transition: transform 1s .3s; }
+.moongchigo_shop_view .phone_case .phone_screen_box {opacity:0;width: 260px;height: 69px;position: absolute;top: 230px;left: -22px;-webkit-transform: scale(0.75);-ms-transform: scale(0.75);transform: scale(0.75);background: url(./images/moongchigo-shop-view-02.jpg) no-repeat center center;-webkit-transition: transform .5s, opacity .5s 3s;-webkit-transition: opacity .5s 3s, -webkit-transform .5s;transition: opacity .5s 3s, -webkit-transform .5s;transition: transform .5s, opacity .5s 3s;transition: transform .5s, opacity .5s 3s, -webkit-transform .5s;}
+.moongchigo_shop_view .phone_case .btn_call {width:36px;height:36px; background:url(./images/moongchigo-shop-view-call.png); background-size:100% 100%; position:absolute; right:16px; bottom:31px;}
+.moongchigo_shop_view.in_view .phone_case .phone_screen_img:before { -webkit-transform: translateY(-128px);  -ms-transform: translateY(-128px);  transform: translateY(-128px); }
+.moongchigo_shop_view.in_view .phone_case .phone_screen_box  {-webkit-transform: scale(1);-ms-transform: scale(1);transform: scale(1);border: 1px solid #222; -webkit-transition-delay: 2s; transition-delay: 2s; opacity:1;}
+/* .moongchigo_shop_view.in_view .phone_case .btn_call{ -webkit-animation: shake 0.5s cubic-bezier(.36,.07,.19,.97); animation: shake 0.5s cubic-bezier(.36,.07,.19,.97); -webkit-animation-delay:1s; animation-delay:1s} */
+
+@-webkit-keyframes scroll {0%{top:10px}30%{top:-300px}60%{top:-600px}100%{top:-220px}}
+@keyframes scroll {0%{top:10px}30%{top:-300px}60%{top:-600px}100%{top:-220px}}
+/*@-webkit-keyframes shake {  10%, 90% { -webkit-transform: translate3d(-1px, 0, 0); transform: translate3d(-1px, 0, 0); }  20%, 80% { -webkit-transform: translate3d(1px, 0, 0); transform: translate3d(1px, 0, 0); }  30%, 50%, 70% { -webkit-transform: translate3d(-2px, 0, 0); transform: translate3d(-2px, 0, 0); } 40%, 60% { -webkit-transform: translate3d(2px, 0, 0); transform: translate3d(2px, 0, 0); }}
+@keyframes shake {  10%, 90% { -webkit-transform: translate3d(-1px, 0, 0); transform: translate3d(-1px, 0, 0); }  20%, 80% { -webkit-transform: translate3d(1px, 0, 0); transform: translate3d(1px, 0, 0); }  30%, 50%, 70% { -webkit-transform: translate3d(-2px, 0, 0); transform: translate3d(-2px, 0, 0); } 40%, 60% { -webkit-transform: translate3d(2px, 0, 0); transform: translate3d(2px, 0, 0); }}*/
+
+.moongchigo_message {padding: 31px 0 47px; background: #f8f8f8;}
+.moongchigo_message h3 > i {width:24px; height:24px;margin:3px 0 0; /*background:url(../images/main/icon-earth.svg) no-repeat;*/background-size:100% 100%;font-style:normal;display:inline-block;vertical-align:top;}
+.moongchigo_message p {margin-top: 10px;margin-bottom: 0;}
+.moongchigo_message p > span {position:relative; display:inline-block; margin-top:6px;}
+.moongchigo_message p > span:before {width:100%;height: 13px;background: var(--color-primary);content:'';display: block;position:absolute;left: 0;right: 0;top: 50%; margin-top:-6.5px;opacity: 0.2;z-index: -1;}
+
+
+@media (min-width: 1023px){
+
+    .introduce_slider .swiper-slide{ width: 340px;}
+
+}
+
+/* @2X */
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+
+    .moongchigo_main .phone_case .phone_screen_img {background-image:url(./images/moongchigo-main-01@2x.jpg); background-size:206px 412px; }
+    .moongchigo_main .phone_case .phone_screen_box {background-image:url(./images/moongchigo-main-02@2x.jpg); background-size:260px 167px; }
+    .moongchigo_shop_list .phone_case .phone_screen_img {background-image:url(./images/moongchigo-shop-list-01@2x.jpg); background-size:206px 945px; }
+    .moongchigo_shop_view .phone_case .phone_screen_img:before {background-image:url(./images/moongchigo-shop-view-01@2x.jpg); background-size:206px 592px; }
+    .moongchigo_shop_view .phone_case .phone_screen_box {background-image:url(./images/moongchigo-shop-view-02@2x.jpg); background-size:266px 69px; }
+    .moongchigo_shop_view .phone_case .btn_call {background-image:url(./images/moongchigo-shop-view-call@2x.png); background-size:36px 36px; }
+
+}

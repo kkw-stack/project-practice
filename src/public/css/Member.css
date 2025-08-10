@@ -1,0 +1,187 @@
+
+/* **************************************** *
+ * LOGIN
+ * **************************************** */
+ .login_wrap {padding: 0 16px;display: table;width: 100%;height: calc(100vh - 60px);}
+ .login_content_inner {text-align: center;height: 100%;display: table-cell;vertical-align: middle;}
+ .login_wrap h2 { font-size:25px; color:#222; letter-spacing: -0.075em;}
+ .login_content_inner .character_img {width: 170px;height: 170px;margin: 0 auto 27px;}
+ .login_content_inner .character_img p {margin-left:-20px;height: 100%;font-size:14px;color:#666;text-align:center;letter-spacing:var(--letter-spacing);background:url(./images/character-login-v3.jpg) no-repeat center top; background-size:auto 100%;}
+ 
+ .login_wrap b { font-size:14px;color:#222; font-weight:400; text-align:center;letter-spacing: var(--letter-spacing);}
+ /* .login_wrap b:before {width:100%;height:150px;margin-bottom: 16px;background: url(../images/sub/mypages/character-login.jpg) no-repeat 44% top;content:'';display:block;} */
+ .login_account_box {margin-top: -8px; margin-bottom: 41px; margin-left:41px; margin-right:41px; position: relative; }
+ .login_account_box li {margin-bottom:10px;}
+ .login_account_box li:last-child {margin-bottom:0;}
+ .login_account_box li button {padding: 15px 0;font-size:15px;letter-spacing: var(--letter-spacing);display:block;color:#666; width: 100%; text-align:center; border:1px solid #ddd;background:#fff;border-radius: 8px;}
+ .login_account_box li span {padding-left: 29px;position:relative;display:inline-block;}
+ .login_account_box li span:before {content:'';display:block;position:absolute;left: 0;top: 50%; background-repeat:no-repeat;}
+ .login_account_box > button > span {top:-2px;}
+ /*
+ .login_account_box li.login_google span:before {width:19px; height:19px; background-image:url(../images/logo-google.svg); margin-top:-9.5px;}
+ .login_account_box li.login_naver span:before {width:18px;height:16px;background-im
+    age:url(../images/logo-naver.svg);left: 2px; margin-top:-8px;}
+ */
+ .login_account_box li.login_kakao span:before {width: 19px;height: 18px;background-image:url(./images/logo-kakao.svg);left: 1px; margin-top:-9px;}
+ html.ios .login_account_box li.login_google span:before {margin-top:-10px;}
+ html.ios .login_account_box li.login_naver span:before {margin-top:-9px;}
+ html.ios .login_account_box li.login_kakao span:before {margin-top:-9px;}
+ html.ios .login_account_box li a {padding-top:16px; padding-bottom:14px;}
+ 
+ 
+ 
+ /* **************************************** *
+  * REGISTER
+  * **************************************** */
+ /* 약관동의 */
+ .register_agree_acticle_hide{display: none;}
+ .register_agree_acticle .article_body form{ padding-bottom: 50px;}
+ .register_agree_acticle .article_body form:after{ content: ""; display: block; height: env(safe-area-inset-bottom);}
+
+ .register_agree_container{ position: relative; }
+ .register_agree_container h2 { margin-bottom: 15px;padding-top: 39px;}
+ .register_agree_container > p {margin-top: 7px; color:var(--color-text-body); line-height: 18px; font-size: 12px;}
+ .register_agree_container h2,
+ .register_agree_container > p { position: relative; z-index: 1;}
+ .register_agree_container .character_img { position: absolute; right: -15px;top: 0; z-index: 0; width: 100%; max-width: 328px;}
+
+ .register_agree_box{ margin-top: 31px;border:1px solid #ddd;background:#fff;border-radius: 8px;position: relative;}
+ .register_agree_box .agree_check_all {  background: #f8f8f8;padding: 11px 16px;border-radius: 8px 8px 0 0;}
+ .register_agree_box .agree_check_all > div > div { margin: 0;}
+ .register_agree_box .agree_check_all span {font-size:15px; line-height:1.7; display:block; margin-top:1px;}
+ .register_agree_box .agree_check_all label > span:after, 
+ .register_agree_box .agree_check_all label > span:before { top: 3px;}
+ .ios .register_agree_box .agree_check_all label > span:after,
+ .android .register_agree_box .agree_check_all label > span:after{ top: 4px;}
+ .register_agree_box ul {padding: 20px 16px 17px;}
+ .register_agree_box li {margin-bottom: 9px;}
+ .register_agree_box li:last-child {margin-bottom:0;}
+ .register_agree_box li:last-child > div {margin-bottom:0}
+ .register_agree_box li span {font-size:12px; line-height:1.5; color:#666; letter-spacing: var(--letter-spacing); display:block; margin-top:1px;}
+ .register_agree_box li span u {text-decoration: blink;border-bottom: 1px solid #666;}
+ html.android .register_agree_box li > div > label > span > span {top:0;}
+ html.ios .register_agree_box li > div > label > span > span {top:-1px;}
+ .register_agree_guide {padding: 16px 0 0;color: #999; margin-bottom: 40px; letter-spacing: var(--letter-spacing);}
+ .register_agree_guide > p {font-size: 13px;}
+ .register_agree_guide > span {margin-top: 3px;font-size: 10px;display: block;}
+ .register_agree_guide .agree_policy {margin-left:6px;padding:0;border:none; background:none; font-size:13px; color:#999;cursor:pointer;}
+ .register_agree_guide .agree_policy span {position:relative;}
+ .register_agree_guide .agree_policy span:before {width:100%; height:1px; background:#bbb; position:absolute; bottom:1px; content:''; display:block}
+ .register_agree_field {padding-bottom: 120px;}
+ 
+ .register_useinfo_container{ margin-bottom: 35px;}
+
+ /* 뭉치고 이용약관 동의 팝업 */
+ #register_terms_popup .jt_btn_wrap {margin:33px 24px 30px;}
+ /* 개인정보 수진이용 동의 팝업 */
+ .register_privacy_wrap .jt_btn_wrap {margin-top:33px;}
+ 
+ body.page-template-register-agree { position:relative;}
+
+ 
+ /* 정보입력 */
+ 
+ .register_write_wrap.wrap {padding-top:0; padding-bottom:100px;}
+ 
+ 
+ /* **************************************** *
+  * MODIFY
+  * **************************************** */
+ /* 내 정보 수정 */
+ html.mobile .page-template-mypage-modify {min-height:auto;}
+ .profile_modify_wrap  {padding-bottom:50px;}
+ .profile_modify_wrap h2 {margin-bottom:6px}
+ .profile_modify_wrap .content_wrap {padding-top:25px; padding-bottom:28px}
+ .profile_modify_wrap .marketing_modify {padding-top:23px;padding-bottom:0px}
+ .profile_modify_wrap .marketing_modify > div { margin-bottom: 28px;}
+ .profile_modify_wrap .marketing_modify > div > h2 {font-size:15px; margin-bottom:3px;}
+ .profile_modify_wrap .marketing_modify > div > p {font-size:13px;}
+ .profile_modify_wrap > div > div {margin-bottom:16px}
+ .profile_modify_wrap > div > div:last-child {margin-bottom:0;}
+ .profile_select {margin-top: 0; margin-bottom:10px; text-align:center; font-size:0;}
+ .profile_select li {padding-bottom: 24px;margin: 0 5px;display:inline-block;vertical-align: top;position:relative;cursor: pointer;}
+ .profile_select li label {display:block;cursor: pointer;}
+ /*
+ .profile_select li.profile_1 label:before {background:url(./images/character-01.png) no-repeat center; }
+ .profile_select li.profile_2 label:before {background:url(./images/character-02.png) no-repeat center; }
+ .profile_select li.profile_3 label:before {background:url(./images/character-03.png) no-repeat center; }
+ */
+ .profile_select input { position: absolute; left: -9999px;}
+ .mypage_info_modify { padding-top: 26px; border-bottom:1px solid #ddd; position:relative;}
+ .mypage_info_modify .jt_form_data {margin-bottom: 16px;}
+ .mypage_info_modify .jt_form_data:last-child {margin-bottom:0;}
+ .mypage_info_modify .password_change {padding-top:8px; margin-bottom:0;}
+ .mypage_info_modify .password_change .jt_label{display:block;}
+ .mypage_info_modify .password_change .jt_form_field_wrap{width:-webkit-calc(100% - 82px);width:calc(100% - 82px);display: inline-block;vertical-align: middle;font-size:0;}
+ .mypage_info_modify .password_change .btn_password_change {margin-top:7px;margin-right:0;}
+ .mypage_marketing_modify b { font-size:15px; color:#222; letter-spacing: var(--letter-spacing);}
+ .mypage_marketing_modify p { margin-top:3px;font-size:12px; color:#aaa; letter-spacing: var(--letter-spacing);}
+ .marketing_agree {margin-top: 14px;position: relative;}
+ .marketing_agree span {font-size:15px; color:#666; letter-spacing: var(--letter-spacing);display:inline-block; vertical-align: middle;}
+ .marketing_agree > div{display:inline-block;vertical-align: middle;position: absolute;right:0;top: 4px;cursor:pointer;}
+ .marketing_agree > div > div { margin: 0;}
+ html.ios .marketing_agree > div {top:1px;}
+ html.android .marketing_agree > div {top:1px;} 
+ /*
+ .btn_switch {position: relative;width: 45px;height: 12px;margin: 5px;}
+ .btn_switch input {height: 100%;width: 100%; position:absolute; opacity:0; z-index:5;cursor:pointer; top:-3px; right:-3px;}
+ .btn_switch input:before { width: 20px; height: 20px; content: ''; display: block; position: absolute; left: 0px; top: -4px;}
+ .btn_switch input:checked:before {right:0; left:auto;}
+ .btn_switch label {cursor: pointer;text-indent: -9999px;width: 45px;height: 12px;background: #ddd;display: block;border-radius: 100px;position: relative;}
+ .btn_switch label:after {content: '';position: absolute;top: -4px;left: 0;width: 18px;height: 18px;background: #fff;border: 1px solid #ddd;border-radius: 50%;-webkit-transition:0.3s;transition: 0.3s;}
+ .btn_switch input:checked + label {background: var(--color-primary);background: rgba(42, 193, 188, .25);}
+ .btn_switch input:checked + label:after {left: 100%;-webkit-transform: translateX(-100%);-ms-transform: translateX(-100%);transform: translateX(-100%);background: var(--color-primary);border-color: var(--color-primary);}
+ */
+ .mypage_modify_util {margin-top: 30px; margin-bottom: 2px; padding-right:1px; text-align: right;}
+ .mypage_modify_util li {padding-right: 8px;margin-right: 6px;position:relative;display:inline-block;vertical-align:middle;}
+ .mypage_modify_util li:before {width:1px;height: 7px;background:#ddd;content:'';display:block;position:absolute;right:0;top: 50%; margin-top:-3.5px;}
+ .mypage_modify_util li:last-child {padding-right:0; margin-right:0; }
+ .mypage_modify_util li:last-child:before {display:none;}
+ .mypage_modify_util li:last-child a {padding-right:0;}
+ .mypage_modify_util li a { padding:3px; font-size:12px; color:#aaa; display:block;}
+ html.ios .mypage_modify_util li:before {margin-top:-4px;}
+ html.android .mypage_modify_util li:before {margin-top:-4px;}
+ html.ie .mypage_modify_util li:before {margin-top:-3px;}
+ html.ratio1_25  .mypage_modify_util li:before {margin-top:-3px;}
+ html.android .page-template-mypage-modify .jt_alert_style_basic .jt_alert_content {padding: 25px 16px 24px;}
+ 
+ /* withdraw popup */
+ .withdraw_popup_open #barba-wrapper {margin-top:0px; padding-top:62px;}
+ .withdraw_popup {height:100% !important;}
+ .withdraw_header {text-align:center;line-height:62px;}
+ .withdraw_container {padding: 21px 16px 50px;}
+ .withdraw_container h2 {font-size:15px; font-weight:700; line-height:1.7; letter-spacing:var(--letter-spacing); color:#222;}
+ .withdraw_container > .modify_title {font-size:15px; font-weight:700; color:#222; letter-spacing: var(--letter-spacing);}
+ .withdraw_container > span {margin-top: -1px;font-size:12px;line-height:1.5;color:#666;letter-spacing:var(--letter-spacing);display: block;}
+ .withdraw_container > ul {padding: 16px 17px 20px;border-radius: 8px;background:#f8f8f8;margin-top: 20px;}
+ .withdraw_container > ul > li {padding-left:10px;margin-bottom: 12px;font-size: 14px;line-height: 1.6;letter-spacing: var(--letter-spacing);color:#666;position: relative;}
+ .withdraw_container > ul > li:last-child {margin-bottom:0;}
+ .withdraw_container > ul > li:before {width: 3px;height: 3px;background: #666;border-radius: 50%;content:'';display:block;position:absolute;left: 0px;top: 10px;}
+ .withdraw_container .withdraw_agree {margin-top: 21px;}
+ .withdraw_container .withdraw_agree span {font-size:14px; color:#666; letter-spacing:var(--letter-spacing); display:inline-block; vertical-align:top;}
+ .jt_alert #withdraw_password {width: 95%;height: 42px;margin-top: 16px;margin-bottom: 12px;padding: 0 19px;border:none;background:#f4f4f4;border-radius: 8px;}
+ html.ios .withdraw_container > ul > li:before { top:9px;}
+ html.ios .withdraw_container .withdraw_agree span {margin-top:1px;}
+ html.android .withdraw_container .withdraw_agree span {margin-top:1px;}
+
+ @media(min-width:1023px){
+
+    /* LOGIN */
+    .login_wrap {padding: 0 24px;}
+    .login_account_box > button > span {top:-3px;}
+    .login_account_box > button > span > span {top:0px;}
+
+     /* withdraw popup */
+    .withdraw_container {padding-left:24px; padding-right:24px;}
+    html.ios .withdraw_container > ul > li:before { top:10px;}
+    html.ios .withdraw_container .withdraw_agree span {margin-top:-2px;}
+
+    /* MODIFY */
+    html.ios .mypage_modify_util li:before {margin-top:-3px;}
+    html.ios .marketing_agree > div {top:3px;}
+
+    /* REGISTER */
+    html.ios .register_agree_box .agree_check_all span {margin-top:0}
+    html.ios .register_agree_box li > div > label > span > span {top:0px;} 
+
+ }

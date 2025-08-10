@@ -1,0 +1,50 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+/out
+
+/ecosystem.config.js
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# just ignore every hidden file expect white list [JT custom]
+.*
+!/.gitignore
+!/.github
+!/.git-ftp-ignore
+
+# underscore is consider backup file so just ignore these too [JT custom]
+_*
+
+!src/pages/_*
+src/lib/constants.js
+
+!cmsadmin/
+cmsadmin/*
+!cmsadmin/wp-content/
+cmsadmin/wp-content/*
+!cmsadmin/wp-content/themes/
+cmsadmin/wp-content/themes/*
+!cmsadmin/wp-content/themes/jt-headless
+
+!cmsadmin/wp-content/plugins/
+
+/public/sitemap*.xml

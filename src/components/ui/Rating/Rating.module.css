@@ -1,0 +1,5 @@
+.container { display:inline-block;vertical-align: middle;}
+.container i {width:12px;height: 17px;font-style:normal;margin-right: 2px;display:inline-block;vertical-align: middle;position:relative;}
+.container i:last-child {margin-right:0}
+.container i:before {font-family: 'jt-font';content: '\e918';font-size: 12px;font-weight:normal;line-height: 1;position: absolute;left: 0;top: 2px;color: #ddd;}
+.container i.active:before {color:#ffc200;}

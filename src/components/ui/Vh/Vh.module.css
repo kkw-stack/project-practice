@@ -1,0 +1,3 @@
+.container { overflow: auto; position: relative;}
+.aligner { display: table; height: 100%;  width: 100%;}
+.aligner_inner {  width: 100%; display: table-cell; vertical-align: middle;}

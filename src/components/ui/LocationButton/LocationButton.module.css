@@ -1,0 +1,11 @@
+.container {display: block;width: 35px;height: 35px; line-height:35px; text-align:center; position: absolute;top: 13px;right: 47px;z-index: 550;cursor: pointer;}
+.container:before { font-family: 'jt-font';content: '\e92b';font-size: 22px;font-weight: normal; color:#222;}
+.container.invert:before{ color:#fff; filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.3));}
+.container.close { right: 10px; }
+.container.close:before { content: '\e915'; font-size: 17px; }
+:global(.ios) .container { top: 14px; }
+
+@media (min-width: 1023px){
+    .container { top: 22px; right: 18px;}
+    .container.close { right: 18px; }
+}

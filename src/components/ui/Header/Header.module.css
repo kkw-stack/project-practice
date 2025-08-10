@@ -1,0 +1,38 @@
+.container { background: #fff; height: 62px; box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.05); position: fixed; top: 0; z-index: 500; overflow: hidden;width: 100%;}
+.title { color: #222; font-size: 16px; font-weight: 700; letter-spacing: var(--letter-spacing); line-height: 1; padding: 24px 38px 20px 4px;  /*padding: 24px 20px 20px 18px;*/ text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; width: calc(100% - 100px); margin: 0 auto; overflow: hidden;}
+.close {  position: absolute; top: 11px; right: 10px; z-index: 10;}
+.close.right { left:auto; right: 10px; }
+.no_fixed { position: absolute;}
+.no_shadow {box-shadow:none}
+.center { text-align: center; padding-left: 38px; }
+
+.logo{ width: 56px; height: 24px; margin: 0 auto; top: -3px; position: relative;}
+
+.share {position: absolute;right: 47px; top: calc(50% + 2px);transform : translateY(-50%);}
+:global(.android) .share {top:calc(50% + 3px)}
+
+.menu_button { border: none; background: none; padding: 0; display: block; width: 22px; height: 22px; position: absolute; top: 20px; left: 16px; z-index: 550; cursor: pointer; }
+.menu_button_inner{ position: relative; }
+.menu_button_inner:before { font-family: 'jt-font'; content: '\e90e'; font-size: 22px; font-weight: normal; color: #222; }
+
+.location_button {color: #222;  max-width: 100%; font-size: 16px; font-weight: 700; letter-spacing: var(--letter-spacing); padding: 0; border: none; background: none; position: relative; display: inline-block;}
+.location_button_inner { position: relative; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; display: block; width: 100%; max-width: 250px; margin: 0 auto;}
+/* .location_button .location_button_inner{ padding-right: 20px; } // 위치설정 아이콘 추가로 해당 아이콘은 제거
+.location_button .location_button_inner:after { width: 15px; height: 15px; background: url(./images/arrow_down_circle.svg) no-repeat; position: absolute; right: 0; top: 50%; margin-top: -7px; content: ''; display: block;} */
+
+.progress_bar { width: 100%; transform: scaleX(0); transform-origin: left; height: 3px; background: var(--color-primary); position: absolute; bottom: 0; display: block;}
+
+@media (min-width : 680px){
+    .container {  max-width: 500px;}
+}
+
+@media (min-width: 1023px){
+    .container { height: 80px;}
+    .title { text-align: center; padding: 32px 32px 32px 38px; width: calc(100% - 130px);line-height: 1.1;}
+    .close { top: 19px; left: 16px;}
+    .close.right { right: 16px; }
+    .small_screen_only{ display: none;}
+    .logo { width: 62px; height: 32px; top: -8px;}
+    .share {right: 15px; top: 50%;}
+    :global(.ios) .share {right: 24px; top:calc(50% - 1px);}
+}

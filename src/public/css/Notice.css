@@ -1,0 +1,36 @@
+/* **************************************** *
+ * GLOBAL
+ * **************************************** */
+ .board_list{ margin-top: 8px; margin-bottom:40px;}
+ .board_list a:after {content:''; display:table; clear:both;}
+ .board_title {font-size:16px;font-weight: 400;line-height: 1.5;color:#222;letter-spacing: var(--letter-spacing);max-height: 3.2em;}
+ .board_title > p {position: relative; display: inline-block;} 
+ .board_title > p > span {padding-right:1px;position:relative;display: inline;max-height: 3.2em;line-height: 1.5;word-break: break-all;overflow: hidden;text-overflow: ellipsis;white-space: normal;-webkit-line-clamp: 2;-webkit-box-orient: vertical;display: -webkit-box;}
+ #notice_list li.new_item .board_title > p > span {text-indent: 16px;}
+ #notice_list li.new_item .board_title > p .icon_new {width:9px;height:10px; background:url(./images/new-label.svg) no-repeat;display: block;position:absolute;left:1px;top:8px;display: inline-block;}
+ .board_day {padding-top:3px;font-size:13px;font-weight: normal;line-height: 1.5;color:#aaa;letter-spacing:var(--letter-spacing);display:block;}
+ .board_day > span {font-weight:400;}
+ html.ios #notice_list li.new_item .board_title > p .icon_new {top:7.5px}
+ html.android #notice_list li.new_item .board_title > p .icon_new {top:7px}
+ html.android .board_day {padding-top:0; margin-top:-3px;}
+ 
+ 
+ /* **************************************** *
+  * NOTICE
+  * **************************************** */
+ .jt_notice_list_wrap {padding:25px 16px;}
+ .page-template-sub-notice .article_title {display: none;}
+ #notice_list li {border-bottom: 1px solid #eee;}
+ #notice_list li a {display:block;padding-top:14px;padding-bottom: 16px;}
+ #notice_list li:last-child {border-bottom:none;}
+ .notice_view_header {text-align:center;line-height:62px;}
+ .notice_view_container {padding: 25px 16px 40px;}
+ html.ios #notice_list li a {padding-top:14.5px;}
+ html.android #notice_list li a {padding-top:14.5px;}
+
+ @media (min-width: 1023px){
+
+    html.ios #notice_list li.new_item .board_title > p .icon_new {top:7px}
+    #notice_list li a { padding-top: 18px; padding-bottom: 20px;}
+    
+ }

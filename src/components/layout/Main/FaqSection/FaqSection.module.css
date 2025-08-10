@@ -1,0 +1,24 @@
+.container {background:#fff;padding: 34px 0 38px;position:relative;}
+.subtitle { margin-bottom: 18px;font-size: 20px; line-height: 28px; color:#222;letter-spacing: -0.025em;text-align: center; font-weight: 700;}
+.accordion { padding: 0 16px; }
+.accordion [class^=Accordion_item] { border-bottom: 1px solid var(--color-divider); }
+.accordion [class^=Accordion_title] { background: #fff; border-bottom: 0; border-top: 0; padding: 16px 0 18px; }
+.accordion [class^=Accordion_title] h3 { font-size: 14px; line-height: 22px; letter-spacing: -0.025em; font-weight: 700; }
+.accordion [class^=Accordion_content] { color: var(--color-text-body); padding: 0 0 22px; margin-top: -5px; font-size: 14px; line-height: 22px; letter-spacing: -0.025em; }
+.accordion [class^=Accordion_control] { right: 0; }
+.accordion [class^=Accordion_control]:after { color:#ccc; }
+.accordion [class*=Accordion_active] [class^=Accordion_control]:after { color: #222; }
+.more { margin-top: 30px; }
+
+:global(.ios) .accordion [class^=Accordion_title] {padding-top:18.5px;}
+:global(.android) .accordion [class^=Accordion_title] {padding-top:17px;}
+
+@media (min-width: 1023px){
+    .subtitle { margin-bottom: 11px;}
+    .accordion { padding: 0 24px; }
+    .accordion [class^=Accordion_title] { padding: 19px 0 22px; }
+    /* .accordion [class^=Accordion_title] h3 { font-size: 16px; line-height: 24px; } */
+    .accordion [class^=Accordion_content] { margin-top: -11px; font-size: 15px; line-height: 25px; }
+
+    :global(.ios) .accordion [class^=Accordion_title] {padding-top:20px;}
+}

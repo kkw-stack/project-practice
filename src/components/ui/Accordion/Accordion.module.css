@@ -1,0 +1,17 @@
+.item:first-child .title {border-top:none;}
+.title {-webkit-tap-highlight-color:  rgba(0, 0, 0, 0); padding: 16px 16px 18px;position: relative;background:#f6f6f6;border-top:1px solid #ddd; border-bottom: 1px solid #f6f6f6;cursor: pointer; -webkit-transition: border .3s;transition: border .3s;}
+.title:first-child:before { content: ''; display: block; width: 160px; height: 50px; position: absolute; right: 0; top: 0; z-index: 100;}
+.active .title { border-bottom: 1px solid #eee;}
+.active .menu span {  margin-top:3px; height:auto; min-height:18px; opacity:1; visibility:visible;}
+.control {width: 26px;height: 26px;position: absolute;right: 10px;top: 50%;margin-top: -13px;}
+.control:after {display: block;width: 100%;height: 100%;position: absolute;top: 0;left: 0;font-family: 'jt-font';content: '\e904';font-size: 13px;font-style: normal;line-height: 27px;text-align: center;color: #222;-webkit-transition: color 300ms, -webkit-transform 300ms;transition: color 300ms, -webkit-transform 300ms;transition: color 300ms, transform 300ms;transition: color 300ms, transform 300ms, -webkit-transform 300ms;}
+.active .control:after {-webkit-transform: rotate(-180deg);-ms-transform: rotate(-180deg);transform: rotate(-180deg);}
+
+.inner {width: 100%; padding-right: 70px; font-size:15px; color:#222; letter-spacing: var(--letter-spacing); }
+.inner h2 {font-size: 15px; font-weight: 700; line-height:1.5; color: #222; letter-spacing: var(--letter-spacing); display:inline-block; vertical-align: middle;}
+.inner span {margin-top:0px;font-size:12px; line-height:1.5; color:#666; display:block;  height:0; min-height:0; opacity:0; visibility:hidden;-webkit-transition: opacity .3s, visibility .3s, height .3s, min-height .3s, margin-top .3s; transition: opacity .3s, visibility .3s, height .3s, min-height .3s, margin-top .3s;}
+.inner div {font-size: 12px; color: #666; margin-top: 4px;}
+.content {position: relative;background: #fff; overflow: hidden;}
+
+:global(.ios) .title {padding-top:18.5px;}
+:global(.android) .title {padding-top:17px;}

@@ -1,0 +1,6 @@
+.container {position:relative; border-bottom: 1px solid #eee;}
+.container:first-child {margin-top: -13px;}
+.container:last-child {margin-bottom:0;}
+.container .delete {width:14px;height:14px;border:none;background:none;padding:12px;cursor:pointer;position:absolute;right: -7px;top: 50%;transform: translateY(-50%);}
+.container .delete:before {font-family: 'jt-font';font-size: 11px;font-weight: bold;color:#aaa;text-align: center;content:'\e915';width: 24px;height: 24px;line-height: 25px;position: absolute;text-align: center;right: 3px;top: 0;}
+.container a {font-size:14px;letter-spacing:var(--letter-spacing);color:#666;width:-webkit-calc(100% - 30px);width:calc(100% - 30px);overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;display:block;padding: 14px 0 15px;}

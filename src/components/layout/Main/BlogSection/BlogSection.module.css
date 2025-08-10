@@ -1,0 +1,39 @@
+.container {background:#fff;padding: 25px 0 34px;position:relative;height:487px;}
+.subtitle { margin-top: 10px;margin-bottom: 29px;font-size: 24px;color:#222;letter-spacing: -0.075em;text-align: center; font-weight: 700;}
+.container h2 {margin-bottom: 16px;padding:0 16px;font-size:20px;font-weight: 700;color:#222;letter-spacing:var(--letter-spacing);}
+.container h2 a {color:#222;}
+.container h2 span { color: var(--color-primary);}
+.slideshow > div > div {padding:0 11px;}
+.slide {width:315px; margin: 0 5px; border-radius:8px; overflow:hidden;}
+.slide figure {padding-top: 60.8%;border-radius: 8px 8px 0 0;  position: relative;  overflow: hidden; background: #eee;}
+.slide figure img { display: block; max-width: 100%; width: 100%; position: absolute; left: 0; top: 0;}
+.content {padding: 16px 15px 17px;background:#f8f8f8;border-radius: 0 0 8px 8px;}
+.content h3 {font-size: 16px; font-weight: 700; color: #222; letter-spacing: var(--letter-spacing);text-overflow: ellipsis; white-space: nowrap; overflow: hidden;line-height:1.5; margin-bottom:5px;}
+.content time { margin-top:5px;font-size:12px; font-weight:400; line-height:1.5; color:#aaa; letter-spacing:var(--letter-spacing); display:block;}
+.more {width:74px;height: 282px;/* background: #f2f2f2; */display: table;/* width: 100%; */}
+.more:last-child {margin-right:21px; margin-left:9px;}
+.more_inner {width: 100%;display: table-cell;vertical-align: middle; text-align:center;}
+.more a {font-size:13px;line-height: 1.6;color:#888;text-align:center;letter-spacing:var(--letter-spacing);padding-top: 46px;padding-left:5px; padding-right:3px; margin-top:5px; display: inline-block;position: relative;}
+.more a i {font-style:normal;display: block;position: absolute;top: 0;left: 50%;transform: translateX(-50%); line-height: 1; margin-left: 1px;}
+.more a i:before {width: 43px;height: 43px;background: #bbb;border-radius: 100%;content:'';display:block;}
+.more a i:after {width:100%;font-family: 'jt-font';content: '\e906';font-size: 13px;color:#fff;font-weight: normal;text-align: center;position: absolute;top: 50%;left: calc(50% + 1px);transform: translate(-50%,-50%);}
+.slideshow_nav button{ opacity: 0; visibility: hidden; transition: opacity .3s, visibility .3s;}
+
+:global(.desktop) .slideshow:hover .slideshow_nav button{opacity:1;visibility:visible;}
+:global(.desktop) .slideshow:hover .slideshow_nav button[disabled]{opacity:0;visibility:hidden; cursor: default;}
+:global(.ios) .more a {margin-top:-5px; padding-left:8px;}
+:global(.ios) .more:last-child {margin-right:16px;}
+:global(.android) .more a i:after {left:50%}
+:global(.android) .content {padding-bottom:16px;}
+:global(.ratio1_25) .more a i:after {left:50%}
+
+
+@media (min-width: 1023px){
+    .container {height:497px;}
+    .container h2{padding-left: 24px; padding-right: 24px;}
+    .slideshow > div > div{padding-left: 19px; padding-right: 19px;}
+    .more:last-child {margin-right:25px;}
+    .more a i:after {top:calc(50% - 1px)}
+    :global(.ios) .more a {margin-top:0px; padding-left:7px;}
+    :global(.ios) .more:last-child {margin-right:25px}
+}

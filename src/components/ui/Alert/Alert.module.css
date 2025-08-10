@@ -1,0 +1,19 @@
+.overlay { background: #000; opacity: 0.4; position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: 999997;}
+
+.container * { -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none;}
+.container *:focus { outline: 0 }
+.container { position: fixed; top: 50%; left: 50%; margin-left: -135px; margin-top: -50px; width: 270px; text-align: center; font-family: -apple-system, SF UI Text, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.4; border-radius: 13px; overflow: hidden; z-index: 999998; background-color: rgba(255, 255, 255, 1);}
+
+.inner { padding: 15px;  min-height: 100px;  display: flex;  justify-content: center;  align-items: center;}
+
+.title {font-weight: 500;font-size: 18px;}
+.text {	margin-top: 5px;}
+
+.button { position: relative; height: 44px; line-height: 44px; font-size: 17px; color: #007aff; border-radius: 0 0 13px 13px; overflow: hidden; cursor: pointer;}
+.button:after {content: '';position: absolute;left: 0;top: 0;height: 1px;width: 100%;display: block;background-color: #c4c4c4;z-index: 999999;}
+
+.button_group { display: flex;}
+.button_group .button { width: 50%;}
+.button_group .button:first-child:before { content: ''; position: absolute; right: 0; top: 0; height: 100%; width: 1px; display: block; background-color: #c4c4c4; z-index: 999999;  }
+.button_group .button:first-child{ border-radius: 0 0 0 13px;}
+.button_group .button:last-child{ border-radius: 0 0 13px 0;}

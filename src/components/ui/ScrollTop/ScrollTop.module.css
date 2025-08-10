@@ -1,0 +1,5 @@
+.container {opacity:0; visibility:hidden; z-index: -1; width:58px;height:58px;padding: 0;color:#fff;font-size:11px;border-radius:50%;background:#555;border:none;text-align:center;position:fixed;bottom:16px;margin-left:24px;display:block;cursor:pointer;transition: background .3s, opacity .3s, visibility .3s; }
+.container span:before {margin-top: -5px;font-family: 'jt-font';content: '\e90b';font-size: 15px;font-weight: normal;color:#fff;display:block;}
+.container:hover {background:#222;}
+.container.fix {position: fixed;top: inherit;bottom: 15px;}
+.container.show {opacity: 1; visibility:visible; z-index: 5;} 

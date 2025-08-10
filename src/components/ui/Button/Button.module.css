@@ -1,0 +1,29 @@
+.container{width: 100%; padding-left:16px; padding-right:16px; height: 50px; font-size: 16px; font-weight: 700; letter-spacing: var(--letter-spacing); border-radius: 8px; background: var(--color-primary); text-align: center; color: #fff; border:none;}
+.container[disabled] { pointer-events: none; cursor: default; background: #ddd; border-color: #ddd; color: #aaa;}
+
+.inner{ position: relative; top:-1px}
+:global(.ios) .inner, 
+:global(.android) .inner{ top:0px}
+.has_icon .text {vertical-align: middle;}
+
+.kakao{background: var(--color-kakao-y);color: var(--color-kakao-dark);}
+.seamless {background-color: #fff; color:var(--color-primary); border:none; box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.15);}
+.secondary { background-color:#ccc ;}
+.more {background-color:#eee;font-size: 15px; font-weight: 400;}
+.more .text { display: inline-block; position: relative; padding-right: 20px; color: #222; line-height: 25px;}
+.more .text:after { display: block; position: absolute; top: 0; right: 0; font-family: 'jt-font'; content: '\e904'; font-size: 13px; font-style: normal; line-height: 25px; text-align: center; color: #222;}
+
+
+
+.outline {border: 1px solid var(--color-primary);background: transparent;color: var(--color-primary);}
+.outline.kakao {border: 1px solid var(--color-divider); color: var(--color-text-body);font-weight: 400;}
+.outline.secondary {color:var(--color-text-sub); border-color: var(--color-divider); font-weight: 400;}
+
+.inline {width: auto; }
+
+.medium { height: 46px; }
+.mini { height: 34px; font-size: 13px;}
+
+.icon{ margin-right: 6px; top: -1px; position: relative; vertical-align: middle;}
+.icon_right{margin-left: 6px; margin-right: 0; }
+:global(.ios) .icon {top:-2px;}

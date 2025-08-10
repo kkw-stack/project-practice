@@ -1,0 +1,28 @@
+/* **************************************** *
+ * EVENT
+ * **************************************** */
+ .single-event .jt_single_outer .single_content > p:first-child {padding-top:19px; border-top:1px solid #eee;}
+ .page-template-sub-event .article_title {display: none;}
+ .event_list_ongoing {text-align:center;font-size:24px;font-weight: 700;line-height: 1;color:#aaa;letter-spacing:var(--letter-spacing); margin-top: 40px; margin-bottom: 38px;}
+ .event_list_ongoing span {color: var(--color-primary);position:relative;line-height: 1;display: inline-block;}
+ .event_list_ongoing span:after {content:'';width:19px;height:19px;position: absolute;top: -13px;left: -11px;background:url(./images/event_object_star.svg) no-repeat;}
+ .event_list_ongoing span:before {content:'';width: 46px;height: 5px;position: absolute;bottom: -9px;left: -2px;background:url(./images/event_object_under_line.svg) no-repeat;background-position: center;}
+ #event_list li {padding-bottom:10px;}
+ #event_list li:last-child {padding-bottom:16px;}
+ #event_list figure {padding-top:37.5%; position: relative; overflow: hidden; -webkit-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); background: #eee;}
+ #event_list figure img {position: absolute; top:0;}
+ .board_list_img {position:relative;border-radius: 8px;overflow: hidden;display: block;  -webkit-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); }
+ .board_list_img span {position: absolute;bottom: 7px;right:0;padding: 4px 10px 5px;background:#222222;background:rgba(34, 34, 34, .6);border-radius: 30px 0 0 30px;font-size: 10px;letter-spacing: var(--letter-spacing);color: #fff; font-weight:400;}
+ html.ios  .board_list_img span {padding-top:4.5px; padding-bottom:5px;}
+ html.android  .board_list_img span {padding-top:5px;}
+
+ .event_no_data_wrap {display: table; height: -webkit-calc(100vh - 122px); height: calc(100vh - 122px); text-align: center; width: 100%;}
+ .event_no_data {text-align:center;width: 100%;display: table-cell;vertical-align: middle;}
+ .event_no_data .character_img {width: 152px;height: 157px;margin: 0 auto 27px;}
+ .event_no_data .character_img p {height: 100%;margin-left: -1px;font-size:14px;color:#666;text-align:center;letter-spacing:var(--letter-spacing);background:url(./images/event-no-data-v6.jpg) no-repeat center top; background-size:auto 100%;}
+ 
+ @media (min-width: 1023px){
+    #event_list li:last-child {padding-bottom:24px;}
+    html.ios .board_list_img span {padding-top:4px; padding-bottom:5px;}
+    #event_list li {padding-bottom:15px;}
+ }

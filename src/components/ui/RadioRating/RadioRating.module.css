@@ -1,0 +1,8 @@
+.container {margin-top: 10px;text-align:center;}
+.container li {margin: 0 2px;display:inline-block;vertical-align:middle;}
+.container li label:before {font-family: 'jt-font';content: '\e918';font-size:32px;font-weight:normal;line-height: 1;position: absolute;left: 0;top: 0;color: #ddd;webkit-transition: all 0.2s ease;-webkit-transition:all 0.2s ease;transition: all 0.2s ease;}
+.container li.active label:before, 
+.container li.hover label:before  { color: #ffc200; }
+.container input { position: absolute; left: -9999px;}
+.container input:checked + label, 
+.container input:not(:checked) + label{position: relative;width: 32px;height: 32px;line-height: 32px;cursor: pointer;line-height: 20px;display: inline-block;color: #666;}

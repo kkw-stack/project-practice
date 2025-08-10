@@ -1,0 +1,7 @@
+/* 
+ * Fix url stop working issue when login in 
+ *
+ * https://github.com/vercel/next.js/issues/5264#issuecomment-424000127
+ *
+ */
+ .gnb_banner_image { box-sizing: border-box;}

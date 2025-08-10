@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*
+ * File       : Font.css
+ * Author     : STUDIO-JT (NICO)
+ * Guideline  : JTstyleReact.1.0
+ *
+ * SUMMARY:
+ * 1) NotoSansKR
+ * 2) JT-Font
+ */
+
+
+/* NotoSansKR */
+@font-face {
+    font-family:'NotoSansKR';
+    font-style: normal;
+    font-display: auto;
+    font-weight: 400;
+    src: local("?"),
+         url('../fonts/noto-sans-kr-v12-latin_korean/noto-sans-kr-v12-latin_korean-regular.woff2') format('woff2');
+    unicode-range: U+0-2025,U+2027-10FFFF; /* remove Horizontal Ellipsis U+2026 to make align bottom */
+}
+
+@font-face {
+    font-family:'NotoSansKR';
+    font-style: normal;
+    font-display: auto;
+    font-weight: 700;
+    src: local("?"),
+         url('../fonts/noto-sans-kr-v12-latin_korean/noto-sans-kr-v12-latin_korean-700.woff2') format('woff2');
+    unicode-range: U+0-2025,U+2027-10FFFF; /* remove Horizontal Ellipsis U+2026 to make align bottom */
+}
+
+
+/* JT-Font */
+@font-face {
+    font-family:'jt-font';
+    font-style: normal;
+    font-display: block;
+    font-weight: normal;
+    src: local("?"),
+         url(../fonts/jt-font/fonts/jt-font.woff) format('woff');
+}

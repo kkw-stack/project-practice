@@ -1,0 +1,40 @@
+
+.container{width: 100%; height: 100%; vertical-align: middle; display: inline-block; text-align: center; background:center center no-repeat; background-size: contain; content: ''; position: relative; }
+
+.size_14{width: 14px; height: 14px;}
+.size_16{width: 16px; height: 16px;}
+.size_18{width: 18px; height: 18px;}
+.size_20{width: 20px; height: 20px;}
+.size_21{width: 21px; height: 21px;}
+.size_22{width: 22px; height: 22px;}
+.size_24{width: 24px; height: 24px;}
+.size_26{width: 26px; height: 26px;}
+.size_28{width: 28px; height: 28px;}
+.size_30{width: 30px; height: 30px;}
+.size_32{width: 32px; height: 32px;}
+.size_34{width: 34px; height: 34px;}
+.size_36{width: 36px; height: 36px;}
+.size_40{width: 40px; height: 40px;}
+.size_48{width: 48px; height: 48px;}
+
+.location { background-image: url(./images/location.svg) ;}
+.star { background-image: url(./images/star.svg);}
+.star_disable { background-image: url(./images/star-disable.svg);}
+.heart { background-image: url(./images/heart.svg);}
+.heart_stroke { background-image: url(./images/heart-stroke.svg);}
+.info { background-image: url(./images/info.svg);}
+.time { background-image: url(./images/time.svg);}
+.calendar { background-image: url(./images/calendar.svg);}
+.coupon { background-image: url(./images/coupon.svg);}
+.new { background-image: url(./images/new.svg);}
+.marker { background-image: url(./images/marker.svg);}
+.won { background-image: url(./images/won.svg);}
+.won_stroke { background-image: url(./images/won-stroke.svg);}
+.speech { background-image: url(./images/speech.svg);}
+.globe { background-image: url(./images/globe.svg);}
+.success { background-image: url(./images/success.svg);}
+.kakao { background-image: url(./images/kakao.svg);}
+.kakao_channel { background-image: url(./images/kakao-channel.svg);}
+
+.useImgTag { background: none;}
+.useImgTag img {width: auto;}

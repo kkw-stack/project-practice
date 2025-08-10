@@ -1,0 +1,11 @@
+.container {padding: 0 16px 16px 16px; background: #f8f8f8;}
+.inner{position:relative; }
+.container a {color:#bbb; font-size:15px; line-height:1.7; background: #fff;padding: 12px 16px;border: 1px solid #ddd;border-radius:8px;width: 100%;display: block;}
+.submit {height: 100%;width: 53px;padding: 0;font-style:normal;position: absolute;right: 0;top: 0;background: none;border: none;outline: none;cursor: pointer;}
+.submit:after {display: block;width: 100%;position: absolute;top: calc(50% + 1px);left: 0;font-family: 'jt-font';content: '\e913';font-size: 19px;font-weight: normal;text-align: center;color: #222;transform: translateY(-50%);-webkit-transition: color 300ms;transition: color 300ms;-webkit-transition-delay: 0ms;transition-delay: 0ms;}
+:global(.ios) .submit:after {top:calc(50% + 0.5px);}
+:global(.android) .submit:after {top:calc(50% + 0.5px);}
+
+@media (min-width: 1023px){
+    .container { padding: 0 24px 24px 24px;}
+}

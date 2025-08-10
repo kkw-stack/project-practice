@@ -1,0 +1,19 @@
+.container { height: 51px; line-height:50px; border-bottom:1px solid #ddd; background:#fff; position:relative; }
+.icon_notice { width: 16px; height:14px; background:url(./images/icon-notice.svg) no-repeat; position:absolute; left: 17px; top: 50%; transform: translateY(-50%); margin-top: 1px; }
+.slideshow {  padding-left:40px; }
+.slideshow > div { height: 50px; }
+.slideshow > div:before { content: '';  display: block;  width: 100%;  height: 18px;  background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(255, 255, 255));  z-index: 10;  position: absolute;  top: -1px;  left: 0;  pointer-events: none; }
+.slideshow > div:after { content: '';  display: block;  width: 100%;  height: 18px;  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255));  z-index: 10;  position: absolute;  bottom: -1px;  left: 0;  pointer-events: none; }
+.slide a { font-size:14px;  color:#666;  letter-spacing:var(--letter-spacing);  width: calc(100% - 16px);  height:100%;  overflow: hidden;  text-overflow: ellipsis;  white-space: nowrap;  word-wrap: normal;  display: block; }
+.slide { height: 50px; overflow:hidden; }
+
+:global(.mobile) .slide_inner{ position: relative; top:1px}
+:global(.mobile) .icon_notice {margin-top:0.5px;}
+:global(.ios) .slide_inner {top:0;}
+
+@media(min-width:1023px){
+    .slideshow { padding-left: 50px; }
+    .icon_notice{left: 25px;}
+    .slide a {width: calc(100% - 24px);}
+    :global(.ios) .slide_inner {top:-0.5px;}
+}

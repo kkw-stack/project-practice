@@ -1,0 +1,81 @@
+
+@charset "utf-8";
+
+/*
+ * File       : Reset.css
+ * Author     : STUDIO-JT (NICO)
+ * Guideline  : JTstyleReact.1.0
+ *
+ * SUMMARY:
+ * 1) GLOBAL RESET 
+ * 2) MOBILE
+ * 3) TEXT SELECTION 
+ * 4) INPUT
+ */
+
+
+/* **************************************** *
+ * GLOBAL RESET 
+ * **************************************** */
+ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,time,figure,article,nav,header,footer,hgroup,video,audio,aside,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	vertical-align: baseline;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+ol,ul {list-style: none;}
+table {border-collapse: separate;border-spacing: 0;}
+caption,th,td {text-align: left;font-weight: normal;}
+figure,article,header,footer,nav,hgroup,video,audio,aside,main {display: block;}
+
+
+/* **************************************** *
+ * MOBILE 
+ * **************************************** */
+/* input, textarea {-webkit-appearance: none;-webkit-border-radius: 0px;border-radius: 0px;} */
+
+/* reset mobile default style */
+body{ word-wrap: break-word;  word-break: keep-all;}
+/*
+body,textarea:focus,input:focus,a:focus {-webkit-tap-highlight-color: rgba(255, 255, 255, 0);} 
+*/
+
+html{-ms-text-size-adjust: none;-webkit-text-size-adjust: none;-moz-text-size-adjust: none;text-size-adjust: none;}
+
+
+/* **************************************** *
+ * TEXT SELECTION 
+ * **************************************** */
+::-moz-selection {background: rgba(42, 193, 188, .35);color:#fff;}
+::selection {background: rgba(42, 193, 188, .35);color:#fff;}
+::-moz-selection {background: rgba(42, 193, 188, .35);color:#fff;}
+
+
+
+/* **************************************** *
+ * INPUT 
+ * **************************************** */
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=password],
+input[type=url],
+input[type=number],
+input[type=search],
+textarea {-webkit-appearance: none;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;outline: none;font-family: sans-serif;}
+input[type=submit], input[type=button], button {cursor: pointer; -webkit-appearance:none;font-family: sans-serif;}
+input[type=radio] {border-radius: 100%;}
+
+/* PLACEHOLDER */
+::-webkit-input-placeholder {font-size: 15px;color: #bbb;}
+::-moz-placeholder {font-family: 'NotoSansKR', sans-serif;font-size: 15px;color: #bbb;}
+:-ms-input-placeholder {font-family: 'NotoSansKR', sans-serif;font-size: 15px;color: #bbb;}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {color: transparent;}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {color: transparent;}
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {color: transparent;}
+

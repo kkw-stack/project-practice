@@ -1,0 +1,19 @@
+.container{position: relative; height: 100%; background-color: #f5f5f5; overflow: hidden;}
+.map { height:100%; height: calc(100vh - 183px)}
+.desc{width: 100%;position: absolute;top: 20px;left: 50%;-webkit-transform: translateX(-50%);-ms-transform: translateX(-50%);transform: translateX(-50%);text-align:center;z-index: 100;}
+.desc p {background:#fff;border-radius:30px;border:1px solid #ddd;font-size: 12px;color: #666;padding: 6px 18px;display:inline-block;box-shadow: 0 0 12px 0px rgba(0,0,0,0.3);}
+.address {width: 100%;padding: 0 16px;position: absolute;bottom: 12px;z-index: 100;}
+.address p {text-align: center;background:#fff;border-radius:8px;border:1px solid #ddd;font-size: 14px;color: #222;letter-spacing:var(--letter-spacing);padding: 11px 0;}
+.current {width: 47px;height: 47px;padding:0;background:#fff;border-radius:50%;border: 1px solid #ddd;position:absolute;right: 16px;bottom: 70px;z-index:100;cursor: pointer;}
+.current:after {display: block;font-family: 'jt-font';content: '\e914';font-size: 15px;font-weight: normal;text-align: center;line-height: 45px;color: #222;}
+:global(.ios) .desc p {padding-bottom:5px }
+:global(.android) .desc p {padding-bottom:5.5px }
+
+@media (min-width: 1023px){
+    .map { height: calc(100vh - 201px);}
+    .desc p {padding-bottom:7px;}
+    .address {padding-left: 24px;padding-right: 24px}
+    .address p {padding-bottom:12px;}
+    .current {right: 24px;}
+    .current:after {text-indent:1px;}
+}

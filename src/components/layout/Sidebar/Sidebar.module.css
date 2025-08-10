@@ -1,0 +1,7 @@
+.container {width: 254px;height: 100%;top: 0;left: 50%;margin-left: 250px;border-left:1px solid #ddd;background-color: #fff;z-index:490; position: fixed;}
+.banner {width:204px; padding-top: 80px;}
+.banner_item a {width:204px; height:340px; margin:0 auto;border-radius:8px; overflow:hidden; display:block;}
+.lazy { opacity: 0; }
+[class*=swiper-container-initialized] .lazy { opacity: 1; }
+
+

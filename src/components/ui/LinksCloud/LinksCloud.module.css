@@ -1,0 +1,11 @@
+.list { margin-left: -4px; margin-right: -4px;}
+.item { display: contents;}
+.link { font-size: 12px; line-height: 22px; padding: 3px 12px 4px; margin: 2px; display: inline-block; color: #666; background: #f6f6f6; border-radius: 4px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; max-width: calc(100% - 8px);}
+.more {  color: #aaa; font-weight: 700; font-size: 12px; line-height: 18px; padding: 20px 10px 20px; text-align: center;display: block; border: none; cursor: pointer; background: none; width: 100%;}
+.more svg {margin-left: 4px; position: relative; top: -1px;}
+
+:global(.ios) .link { padding: 4px 12px 3px; }
+
+@media(min-width:1023px){
+    .more { padding-top: 16px; }
+}      

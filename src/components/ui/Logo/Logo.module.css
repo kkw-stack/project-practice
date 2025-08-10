@@ -1,0 +1,2 @@
+.container { width: 100%; height: 100%; margin: 0 auto; background: url(./images/logo.svg) no-repeat; background-size: 100% 100%;}
+.gray { filter: grayscale(); opacity: 0.75;}

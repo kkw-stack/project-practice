@@ -1,0 +1,36 @@
+.nav { border-bottom: 1px solid #ddd; padding-left: 0; font-size: 0; background: #fff;}
+.fixed{ position: fixed; width: 100%; z-index: 1; max-width: 500px;}
+.item { cursor: pointer; list-style: none; margin-bottom: -1px; padding: 20px 0; font-size: 15px; line-height: 1; color: #666; letter-spacing: var(--letter-spacing); width: 33.33%; text-align: center; display: inline-block; position: relative; border-left: 1px solid #ddd;}
+.item:first-child {border: none;}
+.active { background-color: white; color: #222; font-weight: 700; border-bottom: none;}
+.active:after { width: calc(100% + 2px); height: 2px; background: #222; content: ''; display: block; position: absolute; top: 0; left: -1px; z-index: 2;}
+:global(.ios) .active:after{width: calc(100% + 3px)}
+.item.active:last-child:after{width: calc(100% + 1px)}
+.seamless .item.active:last-child:after { width: 100%;} 
+.sticky { position: sticky; top: 62px; z-index: 200; display: block;}
+
+.panel { display: none; }
+.panel.show { display: block; }
+
+.num_1 .item{width:100%}
+.num_2 .item{width:50%}
+.num_3 .item{width:33.33%}
+.num_4 .item{width:25%}
+.num_5 .item{width:20%}
+.num_6 .item{width:16.6666%}
+
+.seamless .item{border: none; box-shadow:none;}
+.seamless .active {color: var(--color-primary); font-weight:600; background: transparent ;}
+.seamless .active:after {content: '';display: block;width: 100%;height: 3px;position: absolute;left:0;bottom: 0; top:auto;background: var(--color-primary);z-index:100;}
+.seamless .active:first-child:after {width: 100%;left: 0;}
+
+@media (min-width: 680px) {
+    .item.active:last-child:after { width: calc(100% + 2px);}
+    .seamless .item.active:last-child:after { width: 100%;} 
+}
+
+@media (min-width: 1023px) {
+    .seamless .active { font-weight: normal; }
+    .sticky { top: 80px;}
+}
+

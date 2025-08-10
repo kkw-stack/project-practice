@@ -1,0 +1,9 @@
+.container { width: 35px; height: 35px; margin: 0; padding: 0; background: none; border: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; cursor: pointer; }
+.inner{position: relative;}
+.inner:after { display: block; width: 100%; height: 100%; font-family: 'jt-font'; content: '\e915'; font-size: 18px; font-weight: normal; text-align: center; line-height: 40px; color: #222; transition: 300ms;}
+.invert .inner:after{ color:#fff; ; filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.3));}
+.fixed { position: absolute; top: 10px; right: 10px; }
+
+@media ( min-width: 1023px ){
+    .fixed { top: 18px; right: 16px; }
+}

@@ -1,0 +1,95 @@
+#editor{
+    --color-primary: #2AC1BC;
+    --color-title: #222222;
+    --color-text-body: #666666;
+    --color-bg: #f8f8f8;
+}
+
+
+/* Container */
+.edit-post-visual-editor{ background:#e5e5e5}
+.block-editor-writing-flow{ max-width: 500px; margin-left:auto;  margin-right:auto; background-color: #fff; }
+
+.wp-block { max-width: calc(500px - 48px); margin-left: auto; margin-right: auto;}
+.wp-block[data-align='full'] {  max-width: none;}
+
+
+/* Post Title*/
+.editor-post-title .editor-post-title__input { font-size: 18px;}
+
+/* Block Theme */
+.has-type-01-color{color: var(--color-primary)} 
+.has-type-02-color{color: var(--color-title)} 
+.has-type-03-color{color: var(--color-text-body)} 
+.has-type-04-color{color: #fff} 
+.has-type-05-color{color: var(--color-bg)} 
+
+.has-type-01-background-color{background-color: var(--color-primary)} 
+.has-type-02-background-color{background-color: var(--color-title)} 
+.has-type-03-background-color{background-color: var(--color-text-body)}
+.has-type-04-background-color{background-color: #fff} 
+.has-type-05-background-color{background-color: var(--color-bg)} 
+
+#editor .interface-interface-skeleton__content ul,
+#editor .interface-interface-skeleton__content ol{padding:0; }
+#editor .interface-interface-skeleton__content ul li:not(.blocks-gallery-item){ list-style: none; margin: 0;}
+#editor .interface-interface-skeleton__content ol li:not(.blocks-gallery-item){ list-style: decimal; margin: 0; list-style-position: inside;}
+#editor .interface-interface-skeleton__content figure {margin:0}
+#editor .interface-interface-skeleton__content figure img{ border-radius: 8px;}
+
+#editor .interface-interface-skeleton__content h1, #editor .interface-interface-skeleton__content h2, #editor .interface-interface-skeleton__content h3, #editor .interface-interface-skeleton__content h4, #editor .interface-interface-skeleton__content h5, #editor .interface-interface-skeleton__content h6, #editor .interface-interface-skeleton__content p, #editor .interface-interface-skeleton__content ul:not(.blocks-gallery-grid), #editor .interface-interface-skeleton__content ol:not(.blocks-gallery-grid), #editor .interface-interface-skeleton__content blockquote, #editor .interface-interface-skeleton__content .wp-block-image:not(.alignfull), .wp-block-table:not(.alignfull), .wp-block-embed:not(.alignfull),.wp-block-text-columns, .wp-block-columns:not(.alignfull), .wp-block-buttons { margin:0 24px;}
+#editor .interface-interface-skeleton__content h1, #editor .interface-interface-skeleton__content h2, #editor .interface-interface-skeleton__content h3, #editor .interface-interface-skeleton__content h4, #editor .interface-interface-skeleton__content h5, #editor .interface-interface-skeleton__content h6 {margin-bottom: 16px; margin-top: 16px;font-weight:700;}
+#editor .interface-interface-skeleton__content h4, #editor .interface-interface-skeleton__content h5, #editor .interface-interface-skeleton__content h6{margin-bottom: 8px;}
+#editor .interface-interface-skeleton__content .wp-block[data-align="full"],
+#editor .interface-interface-skeleton__content .wp-block[data-align="full"] figure{ margin-left: 0px; margin-right: 0px;}
+#editor .interface-interface-skeleton__content h1 {font-size: 24px;}
+#editor .interface-interface-skeleton__content h2 {font-size: 20px;}
+#editor .interface-interface-skeleton__content h3 {font-size: 18px;}
+#editor .interface-interface-skeleton__content h4 {font-size: 16px; }
+#editor .interface-interface-skeleton__content h5 {font-size: 16px;font-weight:400;}
+#editor .interface-interface-skeleton__content h6 {font-size: 15px;}
+#editor .interface-interface-skeleton__content hr{ max-width: inherit; margin: 16px; border: none; border-bottom: 1px solid #eee;}
+#editor .interface-interface-skeleton__content p {margin: 21px auto 21px; font-size:15px; color:#666; line-height: 1.7;}
+#editor .interface-interface-skeleton__content .wp-block-text-columns p, .wp-block-columns p {  margin: 16px 0;}
+#editor .interface-interface-skeleton__content b {font-weight: 700;}
+#editor .interface-interface-skeleton__content strong {background: var(--color-primary);background:rgba(42, 193, 188, .2);}
+#editor .interface-interface-skeleton__content a {word-break: break-all;}
+#editor .interface-interface-skeleton__content a:not(.wp-block-button__link) {color: var(--color-primary);border-bottom:1px solid var(--color-primary);-webkit-transition: all 300ms;transition: all 300ms;}
+#editor .interface-interface-skeleton__content ul:not(.blocks-gallery-grid), 
+#editor .interface-interface-skeleton__content ol:not(.blocks-gallery-grid) {margin-bottom: 18px;}
+#editor .interface-interface-skeleton__content li:not(.blocks-gallery-item) {position: relative;margin-bottom:3px;font-size:15px;line-height: 1.6;letter-spacing: var(--letter-spacing);color: #666;}
+#editor .interface-interface-skeleton__content li:not(.blocks-gallery-item):last-child {margin-bottom:0;}
+#editor .interface-interface-skeleton__content ul li:not(.blocks-gallery-item) {padding-left: 13px;}
+#editor .interface-interface-skeleton__content ul li:not(.blocks-gallery-item):before {content: '';display: block;width: 4px;height: 4px;position: absolute;top: 10px;left: 0;background: #666;border-radius: 50%;}
+#editor .interface-interface-skeleton__content ol:not(.blocks-gallery-grid){ list-style-type: decimal; list-style-position: inside;}
+#editor .interface-interface-skeleton__content blockquote {margin-bottom: 15px; border-left-width: 2px;}
+#editor .interface-interface-skeleton__content blockquote p {margin: 0;font-style: italic;}
+#editor .interface-interface-skeleton__content .wp-block-image {margin-top: 20px;margin-bottom: 20px;}
+#editor .interface-interface-skeleton__content .wp-block-image + .wp-block-image { margin-top:0;}
+
+#editor .interface-interface-skeleton__content div.wp-caption {margin-top: 26px;margin-bottom: 26px;}
+#editor .interface-interface-skeleton__content div.wp-caption img {margin-top: 0;margin-bottom: 0;}
+#editor .interface-interface-skeleton__content div.wp-caption p.wp-caption-text {margin-top: 8px;margin-bottom: 0;font-size: 14px;line-height: 1.5;text-align: center;}
+#editor .interface-interface-skeleton__content .wp-block-audio figcaption,
+#editor .interface-interface-skeleton__content .wp-block-video figcaption { text-align: center; font-size: 14px;}
+#editor .interface-interface-skeleton__content .wp-block-audio,
+#editor .interface-interface-skeleton__content .wp-block-video:not(.alignfull) {margin: 0 24px;}
+#editor .interface-interface-skeleton__content .wp-block-image figcaption { font-size: 12px; color: #666; margin: 4px 0 0;}
+
+#editor .interface-interface-skeleton__content p.has-background {padding: 14px 24px;}
+#editor .interface-interface-skeleton__content .has-type-01-background-color{ color: #fff; background-color: var(--color-primary);}
+#editor .interface-interface-skeleton__content .wp-block-image.alignfull { margin-left: 0; margin-right: 0;}
+
+#editor .interface-interface-skeleton__content .wp-block-video video { max-width: 100%; width: 100%; }
+
+/* BUTTON BLOCK */
+#editor .interface-interface-skeleton__content .wp-block-button__link { font-size: 16px; padding: 12px 16px; height: 50px; font-size: 16px; letter-spacing: var(--letter-spacing); border-radius: 8px;text-align: center;  border: none;}
+#editor .interface-interface-skeleton__content .wp-block-button__link:not(.has-text-color),
+#editor .interface-interface-skeleton__content .wp-block-button__link.is-style-outline:not(.has-text-color){ color: #fff;}
+#editor .interface-interface-skeleton__content .wp-block-button__link:not(.has-background){ background: var(--color-primary);}
+#editor .interface-interface-skeleton__content .is-style-outline > .wp-block-button__link:not(.has-background), 
+#editor .interface-interface-skeleton__content .wp-block-button__link.is-style-outline { box-shadow: inset 0 0 0 2px var(--color-primary); }
+#editor .interface-interface-skeleton__content .is-style-outline>.wp-block-button__link:not(.has-background), 
+#editor .interface-interface-skeleton__content .wp-block-button__link.is-style-outline:not(.has-background) { background-color: transparent;}
+#editor .interface-interface-skeleton__content .is-style-outline>.wp-block-button__link:not(.has-text-color), 
+#editor .interface-interface-skeleton__content .wp-block-button__link.is-style-outline:not(.has-text-color) { color:  var(--color-primary);}

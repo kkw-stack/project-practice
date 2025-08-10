@@ -1,0 +1,8 @@
+.container { border: none; background: none; padding: 0; display: block; width: 22px; height: 22px; position: absolute; top: 20px; right: 16px; z-index: 550; cursor: pointer; }
+.inner{ position: relative; }
+.inner:before { font-family: 'jt-font'; content: '\e90e'; font-size: 22px; font-weight: normal; color: #222; }
+.invert .inner:before{ color:#fff; filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.3));}
+
+@media (min-width: 1023px){
+    .container { display:none;}
+}

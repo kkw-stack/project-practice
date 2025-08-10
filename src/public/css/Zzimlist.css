@@ -1,0 +1,12 @@
+/* .wish_list{ margin-bottom: 40px;} */
+.wish_list_wrap > div > span {padding:20px 0 19px; font-size:14px; letter-spacing: var(--letter-spacing);}
+.wish_list_wrap > div > div[class^=HeaderList_tooltip] {margin-top:-2px;}
+html.android .wish_list_wrap > div > div[class^=HeaderList_tooltip] {margin-top:-1.5px;}
+
+@media(min-width:1023px){
+
+    .wish_list_wrap > div > span {padding-top:19px; padding-bottom:20px;}
+    .wish_list_wrap > div > div[class^=HeaderList_tooltip] {margin-top:-1px;}
+    html.safari .wish_list_wrap > div > div[class^=HeaderList_tooltip] {margin-top:-3px;}
+ 
+ }

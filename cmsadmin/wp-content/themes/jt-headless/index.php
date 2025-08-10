@@ -1,0 +1,1 @@
+<?php header( 'Location: ' . str_replace( '/cmsadmin', '', home_url() ) );

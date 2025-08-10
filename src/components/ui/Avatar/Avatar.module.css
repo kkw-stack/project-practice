@@ -1,0 +1,16 @@
+.container {width: 38px; height: 38px; display: inline-block; background: no-repeat center center; background-size: 38px 38px;}
+.size_medium {width: 49px; height: 49px; background-size: 49px 49px;}
+.size_large {width: 100px; height: 100px; background-size: 100px 100px;}
+.active:before { width: 45px; height: 45px; border: 3px solid var(--color-primary); border-radius: 50%; content: ''; display: block; position: absolute; left: -1px; top: -1px;}
+.active:after { width: 100%; font-size: 11px; font-weight:700; color: var(--color-primary);  content: 'PICK'; display: block; position: absolute; bottom: 0;}
+.type1 {background-image:url(./images/character-01.svg);}
+.type2 {background-image:url(./images/character-02.svg);}
+.type3 {background-image:url(./images/character-03.svg);}
+
+/* Character @2X 
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+    .type1 {background-image:url(./images/character-01@2x.png); }
+    .type2 {background-image:url(./images/character-02@2x.png); }
+    .type3 {background-image:url(./images/character-03@2x.png); }
+}
+*/

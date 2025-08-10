@@ -1,0 +1,10 @@
+.container {padding-top:24px;}
+.inner {padding-bottom: 19px; border-bottom: 1px solid #ddd;}
+.title {font-size: 18px; font-weight:700; line-height: 1.5;letter-spacing: var(--letter-spacing);color: #222;}
+.meta {padding-top: 3px;font-size:13px; font-weight:400; color:#aaa;}
+
+@media (min-width: 1023px){
+
+    
+}
+

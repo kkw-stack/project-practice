@@ -1,0 +1,11 @@
+
+.container { font-size: 0; float: left;}
+.item { background: #fff; margin-right: 5px; border: 1px solid #ddd; border-radius: 30px; display: inline-block; vertical-align: middle; font-size: 13px; letter-spacing: var(--letter-spacing); color: #666; position: relative; line-height: 1; cursor: pointer; padding: 7px 12px 8px;}
+.item:last-child {margin-right:0;}
+.active { background: var(--color-primary); border-color: var(--color-primary); color: #fff;}
+:global(.ios) .item {padding-top:8px;padding-bottom: 6px;}
+:global(.android) .item {padding-top:8px;}
+
+@media (min-width: 1023px){
+    :global(.ios) .item {padding-top:7px;padding-bottom: 8px;}
+}

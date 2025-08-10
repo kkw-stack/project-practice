@@ -1,0 +1,31 @@
+.container{
+    background: center center no-repeat;
+    background-size: 67.5px 76.5px;
+    width: 100vw;
+    max-width: 500px;
+    height: 70vh;
+    background-image: url(./images/loading.gif);
+    margin: 0;
+    z-index: 99;
+    opacity: 0;
+    animation: fadeInOut 0.3s;
+    animation-delay : 0.3s;
+    animation-fill-mode: forwards;
+}
+.small{
+    height: 120px;
+
+}
+.full{
+    height: 100vh;
+    height: 100dvh;
+}
+
+@keyframes fadeInOut{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    } 
+}

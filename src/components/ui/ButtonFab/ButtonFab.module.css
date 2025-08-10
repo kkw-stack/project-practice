@@ -1,0 +1,9 @@
+.container { width: 58px; height: 58px; line-height: 56px; text-align: center; background: var(--color-primary); border-radius: 50%; display: block; position: fixed; bottom: 16px; right: 16px; box-shadow: 2px 0 3px rgba(0, 0, 0, 0.25); z-index: 500; transition: opacity .3s, visibility .3s;}
+.container:before { font-family: 'jt-font'; font-size: 23px; line-height: 58px; color: #fff; font-weight: normal;}
+.container.phone:before {content: '\e90f'}
+:global(.ios) .container.phone:before {display:block; text-indent:-2px;}
+:global(.android) .container.phone:before {display:block; text-indent:-2px;}
+
+@media (min-width: 680px){
+    .container {  right: auto; left: 50%; margin-left: 175px; }
+}

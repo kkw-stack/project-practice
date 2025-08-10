@@ -1,0 +1,91 @@
+/* **************************************** *
+* PRIVACY
+* **************************************** */
+.privacy_inner_warp{ padding-bottom: 50px; padding-top: 85px;}
+
+body.terms_popup_open {position:relative; width:100%; overflow:hidden;} 
+.terms_popup_open .sub_tab_nav_wrap + div {padding-top:53px;}
+.terms_popup_open .inner_wrap {padding-bottom:50px;margin-bottom:50px;}
+.terms_popup_open .sub_tab_nav_wrap.loaded_fix {position:absolute;}
+.terms_tab .tabs_menu_item {width:50%;}
+
+.register_terms_popup_open .sub_tab_nav_wrap + div {padding-top:53px;}
+.register_terms_popup_open .inner_wrap {padding-bottom:50px;margin-bottom:50px;}
+.register_terms_popup_open .sub_tab_nav_wrap.loaded_fix {position:absolute;}
+
+.privacy_select > div > div:before {color:#222;}
+
+/* 이용약관 */
+body.privacy_policy_popup_open {position:relative; width:100%;overflow:hidden;} 
+
+.privacy_box_wrap {padding-bottom: 70px; padding-top: 15px;}
+.privacy_select > div {margin-top:6px; margin-bottom:24px;}
+.privacy_box {margin-bottom: 26px;word-break: keep-all;}
+.privacy_box:last-child {margin-bottom: 0;}
+.privacy_box_chapter:not(:first-child) {padding-top: 5px;}
+.privacy_box_chapter_title {font-size: 16px;line-height:1;color:#222;font-weight: 600;letter-spacing:var(--letter-spacing);position: relative;display:inline-block;margin-bottom: 33px;}
+.privacy_box_title {display: block;margin-bottom: 12px;font-size: 15px;font-weight: 600;line-height: 1.6;color: #666;letter-spacing: var(--letter-spacing);}
+.privacy_box > *:last-child {margin-bottom: 0;}
+.privacy_box > *:last-child > li:last-child ul,
+.privacy_box > *:last-child > li:last-child > *:last-child {margin-bottom: 0;}
+.privacy_box a {color:#666;}
+.privacy_box a span {color:#222;border-bottom: 1px solid #222;}
+.privacy_box p {margin-bottom: 20px;font-size: 15px;line-height: 1.7;color: #666;letter-spacing: var(--letter-spacing);}
+.privacy_box > ul > li {margin-bottom: 15px;position: relative;font-size: 15px;line-height: 1.7;color: #666;letter-spacing: var(--letter-spacing);padding-left: 18px;counter-increment: item;}
+.privacy_box > ul > li:before {content: counter(item)'.';height: 22px;display: block;position: absolute;top:5px;left: 0;text-align: center;width: 13px;height: 13px;line-height: 15px;font-size: 15px;line-height: 1;}
+.privacy_box > ul > li:last-child {margin-bottom: 0;}
+.privacy_box > ul > li > ul {margin-left: -2px;margin-top: 7px;margin-bottom: 20px;counter-reset: item;}
+.privacy_box > ul > li > ul > li {margin-bottom: 7px;position: relative;font-size: 15px;line-height: 1.7;color: #666;letter-spacing: var(--letter-spacing);padding-left: 18px;counter-increment: item;}
+.privacy_box > ul > li > ul > li:nth-child(n+10) {padding-left:24px;}
+.privacy_box > ul > li > ul > li:before {content: counter(item)')';display: block;position: absolute;top: 5px;left: 0;margin-top: 0px;font-size: 15px;line-height: 1;}
+.privacy_box > ul > li > ul > li:last-child {margin-bottom: 0;}
+.privacy_box > ul > li > ul > li > ul {margin-left: -2px; margin-top: 20px; margin-bottom: 20px;}
+.privacy_box > ul > li > ul > li > ul > li { padding-left: 24px; position: relative; }
+.privacy_box > ul > li > ul > li > ul > li > span { position: absolute; top: 0; left: 0; }
+.privacy_box table { width: 100%; border-top: 1px solid #ddd; border-left: 1px solid #ddd; margin-top:-13px;}
+.privacy_box table tr td { font-size: 14px; color: #666; padding: 12px 15px; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd; line-height: 1.6; letter-spacing: var(--letter-spacing); }
+.privacy_box table tr td:first-child { width: 26%; }
+.privacy_box table tr td > ul {counter-reset: item;}
+.privacy_box table tr td > ul > li { position: relative; padding-left: 18px; margin-bottom: 4px; counter-increment: item;}
+.privacy_box table tr td > ul > li:last-child { margin-bottom: 0; }
+.privacy_box table tr td > ul > li:before {content: counter(item)'.';position: absolute;top: 0;left: 0;}
+
+/* 개인정보처리방침 */
+.privacy_policy_wrap .inner_wrap {padding-top: 27px; padding-bottom:50px;}
+.privacy_policy_wrap .privacy_box_title {color:#222;}
+.privacy_policy_wrap .privacy_box > *:last-child {margin-bottom: 0;}
+.privacy_policy_wrap .privacy_box p {letter-spacing:var(--letter-spacing);}
+.privacy_policy_wrap .privacy_box > ul {margin-bottom: 19px;}
+.privacy_policy_wrap .privacy_box > ul > li > p {margin-left: -18px;margin-top: 8px; margin-bottom: 16px;}
+.privacy_policy_wrap .privacy_box > ul.bullet_count > li {padding-left: 14px;}
+.privacy_policy_wrap .privacy_box > ul.bullet_count > li:before {content: '-';top: 4px;left: -4px;}
+
+.privacy_box_in_box_container {margin-left:-18px;margin-top: 5px;margin-bottom: 5px;}
+.privacy_policy_wrap .privacy_box:last-child .privacy_box_in_box_container > *:last-child {margin-bottom:0}
+.privacy_box_in_box_container > p {font-size:14px;color:#666;margin-bottom: 12px;padding-left: 15px;}
+.privacy_box_in_box {background-color:#f8f8f8;padding: 15px 17px;margin-bottom: 23px;margin-left: 0; border-radius:8px;}
+.privacy_box .privacy_box_in_box p {font-size: 14px;line-height: 1.6;color:#666;letter-spacing:var(--letter-spacing);padding-left: 0;margin-bottom: 4px;}
+.privacy_box .privacy_box_in_box p:last-child {margin-bottom: 0;}
+.privacy_box .privacy_box_in_box > ul > li {position: relative;font-size: 14px;line-height: 1.6;color: #666;letter-spacing: var(--letter-spacing);padding-left: 10px;margin-bottom: 4px;}
+.privacy_box .privacy_box_in_box > ul > li:before {content:'-';display: block;position: absolute;top: 4px;left: 0;font-size: 15px;line-height: 1;}
+.privacy_box .privacy_box_in_box > ul > li:last-child {margin-bottom:0;}
+html.ios .privacy_box .privacy_box_in_box > ul > li:before { top:2px}
+html.android .privacy_box .privacy_box_in_box > ul > li:before { top:3px}
+
+.privacy_box .privacy_box_in_box > .letter_count > li {padding-left: 22px;}
+.privacy_box .privacy_box_in_box > .letter_count > li:before {display: block; width: auto; height: auto; font-size: 14px; color: inherit; position: absolute; top: 4px; left: 0;}
+.privacy_box .privacy_box_in_box > .letter_count > li:nth-child(1):before {content: '가.';}
+.privacy_box .privacy_box_in_box > .letter_count > li:nth-child(2):before {content: '나.';}
+.privacy_box .privacy_box_in_box > .letter_count > li:nth-child(3):before {content: '다.';}
+.privacy_box .privacy_box_in_box > .letter_count > li:nth-child(4):before {content: '라.';}
+.privacy_box .privacy_box_in_box > .letter_count > li:nth-child(5):before {content: '마.';}
+.privacy_box .privacy_box_in_box > .letter_count > li:nth-child(6):before {content: '바.';}
+.privacy_box .privacy_box_in_box > .letter_count > li:nth-child(7):before {content: '사.';}
+.privacy_box .privacy_box_in_box > .letter_count > li:nth-child(8):before {content: '아.';}
+.privacy_box .privacy_box_in_box > .letter_count > li:nth-child(9):before {content: '자.';}
+.privacy_box .privacy_box_in_box > .letter_count > li:nth-child(10):before {content: '차.';}
+.privacy_box .privacy_box_in_box > .letter_count > li:nth-child(11):before {content: '카.';}
+.privacy_box .privacy_box_in_box > .letter_count > li:nth-child(12):before {content: '타.';}
+.privacy_box .privacy_box_in_box > .letter_count > li:nth-child(13):before {content: '파.';}
+.privacy_box .privacy_box_in_box > .letter_count > li:nth-child(14):before {content: '하.';}
+html.ios .privacy_box .privacy_box_in_box > .letter_count > li:before{top:4px}

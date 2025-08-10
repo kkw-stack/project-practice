@@ -1,0 +1,10 @@
+.container {position:relative; line-height: 15px; display: inline-block; text-align: center;}
+.inner {display: inline-block; position: relative;padding-left: 20px;}
+.icon {display: inline-block;font-size: 14px;position: absolute;left: 0; top: 50%; transform: translateY(-50%); }
+.icon:before {content: '\e926'; font-family: 'jt-font'; color: #222; font-weight: 400;position: relative; }
+.drawing .icon:before {content: '\e91f'; font-weight: 700;}
+
+.no_text{width: 40px; height: 30px;}
+.no_text .inner{padding-left: 0px; width: 18px; height: 18px; margin-top: 6px;}
+.no_text .icon {font-size:18px}
+:global(.android) .no_text .inner {margin-top:5px;}

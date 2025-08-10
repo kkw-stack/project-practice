@@ -1,0 +1,11 @@
+.container {display: inline-block; vertical-align: top; padding: 0 10px 0 24px; position: relative;font-size: 14px;letter-spacing: var(--letter-spacing);color: #666;cursor: pointer;}
+.container:last-of-type {padding-right:0} 
+.container input { position: absolute; opacity: 0; cursor: pointer;left: 0; top: 0;}
+.container > span:after {display: block;font-family: 'jt-font';content: '\e911';font-size: 19px;font-weight: normal;color: #fff;position:absolute;left:0.5px;top: calc(50% - 0.5px); transform: translateY(-50%);margin-top:0px;}
+.container > span:before {border-radius: 3px; content: '';display: block;height: 20px;width: 20px;position: absolute;left: 0; top: 50%; transform: translateY(-50%);background: #ccc;}
+.container.round span:before{border-radius: 50%;}
+.container input:checked + span:before { background: var(--color-primary);}
+.container input:checked + span:after { display: block; }
+
+:global(.ios) .container > span:after {top:calc(50% + 0.5px); left:1px; font-size:18px;}
+:global(.android) .container > span:after {top:calc(50% + 0.5px); left:1px; font-size:18px;}

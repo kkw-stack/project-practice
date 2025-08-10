@@ -1,0 +1,9 @@
+.container {width: 155px;padding: 9px 25px 9px 9px;background:#222;border-radius: 8px;position:relative; left: 13px; top: 38px; z-index: 50; opacity:0; visibility:hidden; /*transition: opacity .3s, visibility .3s;*/}
+.container:before {border-top: 7px solid transparent;border-left: 7px solid #222;border-bottom: 7px solid transparent;border-radius: 8px;content:'';display:block;position:absolute;top: -5px;left:0;}
+.container.bottom:before{top: auto; bottom: -5px;}
+.desc {font-size:11px;font-weight:normal;color:#fff;letter-spacing: var(--letter-spacing);line-height: 1.4;display: block;padding-right: 0 !important;}
+.close {position:absolute;right:2px;top: 6px;padding:0 5px;border:none;background:none;cursor: pointer;}
+.close:before {font-family: 'jt-font';content: '\e91d';font-size: 13px;font-weight:normal;color: #fff;}
+:global(.android) .close { top:8px;}
+
+.show {opacity:1; visibility:visible;}

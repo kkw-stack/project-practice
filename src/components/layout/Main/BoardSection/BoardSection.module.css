@@ -1,0 +1,10 @@
+.container {padding:7px 16px 19px; background:#fff;}
+.container > div {padding: 12px 0 13px;font-size: 0;border-bottom:1px solid #eee;position: relative;}
+.container > div:last-child {border-bottom:none;padding-bottom:0;}
+.container > div p {color:#222; width: 57px;font-weight: 700;font-size: 14px;letter-spacing:var(--letter-spacing);display: inline-block;vertical-align: middle;}
+.container > div a {width: calc(100% - 57px);font-size: 14px;line-height:1;letter-spacing:var(--letter-spacing);color:#222;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;display: inline-block;vertical-align: middle;}
+:global(.android) .container > div{ padding-bottom:12px;}
+
+@media (min-width: 1023px){
+    .container{ padding-left: 24px;  padding-right:24px;}
+}
